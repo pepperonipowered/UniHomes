@@ -1,8 +1,8 @@
-
+import HomeScreen from '../modules/home/screens/HomeScreen';
 export default function Home() {
-  return (
-    <div>
-      Hello 
-    </div>
-  );
+	return (
+		<div>
+			<HomeScreen />
+		</div>
+	);
 }
