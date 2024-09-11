@@ -22,6 +22,46 @@ const spiels = {
 	BUTTON_SUBMIT: 'Submit',
 	BUTTON_VIEW: 'View',
 	BUTTON_VIEW_ALL: 'View all',
+
+	//Navbar
+	NAVBAR_MENU_LIST: [
+		{
+			label: 'Home',
+			href: '#home',
+			description: 'Description for Home',
+		},
+		{
+			label: 'Listings',
+			href: '#listings',
+			description: 'Description for Listings',
+		},
+		// For logged in users
+		{
+			label: 'Messages',
+			href: '#messages',
+			description: 'Description for Messages',
+		},
+		{
+			label: 'Favorites',
+			href: '#favorites',
+			description: 'Description for Favorites',
+		},
+	],
+
+	NAVBAR_HOME_MENUCONTENT: [
+		{
+			label: 'Introduction',
+			description: 'What is UniHomes?',
+		},
+		{
+			label: 'Features',
+			description: 'How it works',
+		},
+		{
+			label: 'Reviews and Ratings',
+			description: 'Testimonials',
+		},
+	],
 };
 
 export default spiels;

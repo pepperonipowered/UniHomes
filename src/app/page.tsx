@@ -1,8 +1,9 @@
-import HomeScreen from '../modules/home/screens/HomeScreen';
+import Navbar from '@/components/Navbar';
+
 export default function Home() {
 	return (
-		<div>
-			<HomeScreen />
+		<div className='bg-white text-dark dark:bg-zinc-950 dark:text-white min-h-screen min-w-full'>
+			<Navbar />
 		</div>
 	);
 }
