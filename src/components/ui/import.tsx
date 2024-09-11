@@ -17,7 +17,7 @@ export {
 	AlertDialogTitle,
 	AlertDialogTrigger,
 } from './alert-dialog';
-export { Input } from '../shadcn-ui/input';
-export { Card, CardContent, CardHeader, CardTitle } from '../shadcn-ui/card';
-export { Avatar, AvatarFallback, AvatarImage } from '../shadcn-ui/avatar';
-export { Badge } from '../shadcn-ui/badge';
+export { Input } from '../ui/input';
+export { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+export { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+export { Badge } from '../ui/badge';

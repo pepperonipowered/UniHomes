@@ -1,8 +1,7 @@
-import React from 'react';
-import { HomeSubmitButton } from '../components/HomeSubmitButton';
+import Hero from '../components/Hero';
 
 const HomeScreen = () => {
-	return <HomeSubmitButton />;
+	return <Hero />;
 };
 
 export default HomeScreen;
