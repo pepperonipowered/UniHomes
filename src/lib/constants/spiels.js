@@ -1,5 +1,9 @@
 /* eslint-disable sort-keys */
 const spiels = {
+	// Home
+	HERO_DESCRIPTION:
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.',
+
 	// Buttons
 	BUTTON_BACK: 'Back',
 	BUTTON_BOOK_NOW: 'Book Now',
@@ -9,7 +13,9 @@ const spiels = {
 	BUTTON_DEACTIVATE: 'Deactivate',
 	BUTTON_DEACTIVATE_ACCOUNT: 'Deactivate Account',
 	BUTTON_DELETE: 'Delete',
+	BUTTON_EXPLORE_NOW: 'Explore Now',
 	BUTTON_FILTER: 'Filter',
+	BUTTON_LEARN_MORE: 'Learn More',
 	BUTTON_LOGIN: 'Login',
 	BUTTON_NEXT: 'Next',
 	BUTTON_PROCEED: 'Proceed',
