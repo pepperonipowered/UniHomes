@@ -2,8 +2,8 @@ import { ArrowDownRight } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import spiels from '@/lib/constants/spiels';
-import HeroGallery from './HeroGallery';
 import { TypewriterEffectSmooth } from '@/components/ui/typewriter-effect';
+import { Globe } from './Globe';
 
 const Hero = () => {
 	const words = [
@@ -19,10 +19,10 @@ const Hero = () => {
 		},
 	];
 	return (
-		<section className='py-32 px-32'>
+		<section>
 			<div className='container'>
 				<div className='grid items-center gap-8 lg:grid-cols-2'>
-					<div className='flex flex-col items-center text-center lg:items-start lg:text-left'>
+					<div className='flex flex-col items-center text-center lg:items-start lg:text-left sm:pt-44'>
 						<Badge variant='outline'>
 							New Release
 							<ArrowDownRight className='ml-2 size-4' />
@@ -43,7 +43,9 @@ const Hero = () => {
 							</Button>
 						</div>
 					</div>
-					<HeroGallery />
+					{/* <HeroGallery /> */}
+					{/* Need to fix globe responsiveness */}
+					<Globe />
 				</div>
 			</div>
 		</section>

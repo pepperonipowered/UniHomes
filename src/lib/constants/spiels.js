@@ -3,6 +3,24 @@ const spiels = {
 	// Home
 	HERO_DESCRIPTION:
 		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.',
+	HOW_IT_WORKS: 'How It Works',
+	HOW_IT_WORKS_CARDS: [
+		{
+			label: 'Search Property',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+		},
+		{
+			label: 'Explore Property',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+		},
+		{
+			label: 'Choose Property',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+		},
+	],
 
 	// Buttons
 	BUTTON_BACK: 'Back',
