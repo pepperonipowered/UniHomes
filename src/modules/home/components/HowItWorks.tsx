@@ -14,7 +14,7 @@ const HowItWorks = () => {
 						{spiels.HERO_DESCRIPTION}
 					</p>
 				</div>
-				<div className='mt-5 grid grid-cols-3 place-items-center gap-4 lg:grid-cols-3'>
+				<div className='mt-5 grid grid-cols-1 place-items-center gap-4 lg:grid-cols-3'>
 					{spiels.HOW_IT_WORKS_CARDS.map((item, index) => (
 						<WobbleCard
 							containerClassName='col-span-1 lg:col-span-1 h-full bg-primary min-h-[50px] lg:min-h-[200px]'
