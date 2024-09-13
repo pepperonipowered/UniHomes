@@ -6,7 +6,7 @@ import React from 'react';
 export default function HeroSection() {
     return (
             <div className="flex items-center justify-center h-screen w-1/2">
-                <div className="w-full px-4 py-8">
+                <div className="fixed w-full px-4 py-8">
                     <div className="flex flex-col items-center">
                         <p className='my-6 text-pretty text-1xl'>Explore Saved Listings</p>
                         <h1 className="text-pretty text-4xl font-bold lg:text-6xl">

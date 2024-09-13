@@ -7,13 +7,11 @@ import spiels from '@/lib/constants/spiels';
 
 export default function Listings() {
     return (
-        <Card className="flex flex-col">
-            <div className="h-auto w-full rounded-t-md h-1/2 p-4 box-border border-4 border-black">
-                <img src="https://via.placeholder.com/250x250" className="h-1/2 w-full object-cover rounded-t-md box-border border-4 border-black" alt="" />
-            </div>
+        <Card className="h-auto flex flex-col">
             <CardHeader>
+                <img src="https://via.placeholder.com/250x250" className="h-1/2 w-full object-cover rounded-t-md box-border border-4 border-black" alt="" />
             <CardTitle>Create project</CardTitle>
-            <CardDescription>Deploy your new project in one-click.</CardDescription>
+            <CardDescription className='box-border border-4 border-black'>Deploy your new project in one-click.</CardDescription>
             </CardHeader>
             <CardContent>
             <p>Description</p>
