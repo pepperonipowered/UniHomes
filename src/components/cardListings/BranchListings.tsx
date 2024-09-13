@@ -40,7 +40,7 @@ export default function BranchListings() {
   );
 }
 
-
+//This should be dynamic, fetched from the database
 const items = [
   {
     title: "The Dawn of Innovation",
