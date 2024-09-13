@@ -1,5 +1,5 @@
 import React from 'react'
-import DashboardLayout from '../components/DashboardLayout'
+import DashboardLayout from '../../modules/lessor-dashboard/components/DashboardLayout'
 
 
 const LessorDashboard = ({ children } : { children: React.ReactNode }) => {

@@ -28,7 +28,7 @@ const Sidebar = () => {
           <div className="relative h-full flex flex-col px-3 py-4 overflow-y-auto shadow-md dark:shadow-zinc-800">
               <Button
                   className={cn(
-                      "transition-transform ease-in-out duration-300 mb-1",
+                      "transition-transform ease-in-out duration-300 ",
                       sidebar?.isOpen === false
                           ? "translate-x-1"
                           : "translate-x-0"
@@ -46,7 +46,7 @@ const Sidebar = () => {
                                   : "translate-x-0 opacity-100"
                           )}
                       >
-                          Brand
+                          UniHomes
                       </h1>
                   </Link>
               </Button>
