@@ -28,6 +28,6 @@
 		".next/types/**/*.ts",
 		"src/modules/home/components/button.js",
 		"src/modules/home/screens/HomeScreen.js"
-	],
+, "src/modules/home/components/Hero.js", "src/modules/favorites/screens/FavoritesScreen.js"	],
 	"exclude": ["node_modules"]
 }

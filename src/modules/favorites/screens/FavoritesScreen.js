@@ -1,0 +1,16 @@
+import FavoriteListings from '@/modules/favorites/components/FavoriteListings';
+import NavBar from '@/components/navbar/Navbar';
+import HeroSection from '@/modules/favorites/components/Hero';
+
+
+export default function FavoritesScreen() {
+    return (
+        <div>
+            <NavBar/>
+            <div className='min-h-screen flex justify-center'>
+                <HeroSection/>
+                <FavoriteListings/>
+            </div>
+        </div>
+    );
+}
