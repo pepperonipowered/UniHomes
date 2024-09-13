@@ -19,32 +19,30 @@ const Hero = () => {
 		},
 	];
 	return (
-		<section>
-			<div className='container'>
-				<div className='grid items-center gap-8 lg:grid-cols-2'>
-					<div className='flex flex-col items-center text-center lg:items-start lg:text-left sm:pt-44'>
-						<Badge variant='outline'>
-							New Release
+		<section className='pl-32 pr-28 py-32 xl:py-10'>
+			<div className='grid items-center gap-6 lg:grid-cols-9'>
+				<div className='col-span-4 flex flex-col items-center text-center lg:items-start lg:text-left '>
+					<Badge variant='outline'>
+						New Release
+						<ArrowDownRight className='ml-1 size-4' />
+					</Badge>
+
+					<TypewriterEffectSmooth words={words} />
+
+					<p className='mb-8 max-w-xl text-muted-foreground lg:text-xl'>
+						{spiels.HERO_DESCRIPTION}
+					</p>
+					<div className='flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start'>
+						<Button className='w-full sm:w-auto'>
+							{spiels.BUTTON_EXPLORE_NOW}
+						</Button>
+						<Button variant='outline' className='w-full sm:w-auto'>
+							{spiels.BUTTON_LEARN_MORE}
 							<ArrowDownRight className='ml-2 size-4' />
-						</Badge>
-
-						<TypewriterEffectSmooth words={words} />
-
-						<p className='mb-8 max-w-xl text-muted-foreground lg:text-xl'>
-							{spiels.HERO_DESCRIPTION}
-						</p>
-						<div className='flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start'>
-							<Button className='w-full sm:w-auto'>
-								{spiels.BUTTON_EXPLORE_NOW}
-							</Button>
-							<Button variant='outline' className='w-full sm:w-auto'>
-								{spiels.BUTTON_LEARN_MORE}
-								<ArrowDownRight className='ml-2 size-4' />
-							</Button>
-						</div>
+						</Button>
 					</div>
-					{/* <HeroGallery /> */}
-					{/* Need to fix globe responsiveness */}
+				</div>
+				<div className='col-span-5'>
 					<Globe />
 				</div>
 			</div>

@@ -1,19 +1,26 @@
+import { TracingBeam } from '@/components/ui/tracing-beam';
 import Hero from '../components/Hero';
 import HowItWorks from '../components/HowItWorks';
 import Stats from '../components/Stats';
+import Testimonials from '../components/Testimonials';
 
 const HomeScreen = () => {
 	return (
 		<>
-			<section className='py-4 lg:py-4 xl:py-4 px-32'>
-				<Hero />
-			</section>
-			<section className='pt-32 pb-8 px-32'>
-				<HowItWorks />
-			</section>
-			<section className='py-8 px-32'>
-				<Stats />
-			</section>
+			<TracingBeam>
+				<section>
+					<Hero />
+				</section>
+				<section className='py-16 px-32 xl:py-10 md:py-8'>
+					<HowItWorks />
+				</section>
+				<section className='py-16 px-32 xl:py-10 md:py-8'>
+					<Stats />
+				</section>
+				<section className='py-16 px-32 xl:py-10 md:py-8'>
+					<Testimonials />
+				</section>
+			</TracingBeam>
 		</>
 	);
 };

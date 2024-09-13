@@ -10,12 +10,12 @@ const Stats = () => {
 	};
 
 	return (
-		<section className='my-10'>
+		<section>
 			<div className='container'>
 				<p className='mb-2 text-xs text-muted-foreground'>
 					{spiels.STATS_LABEL}
 				</p>
-				<h2 className='text-pretty text-4xl font-semibold lg:text-4xl my-2'>
+				<h2 className='font-semibold xs:text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl'>
 					{spiels.STATS_HEADER}
 				</h2>
 				<div className='mt-14 grid gap-6 md:grid-cols-2 lg:mt-14 lg:grid-cols-4'>

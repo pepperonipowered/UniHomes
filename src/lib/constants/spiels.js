@@ -51,6 +51,8 @@ const spiels = {
 			avatar: Star,
 		},
 	],
+	TESTIMONIALS_LABEL: 'TESTIMONIALS',
+	TESTIMONIALS_HEADER: 'Meet our happy clients',
 
 	// Buttons
 	BUTTON_BACK: 'Back',

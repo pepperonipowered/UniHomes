@@ -28,7 +28,7 @@ export function Globe() {
 		arcTime: 1000,
 		arcLength: 0.9,
 		rings: 1,
-		maxRings: 3,
+		maxRings: 4,
 		initialPosition: { lat: 22.3193, lng: 114.1694 },
 		autoRotate: true,
 		autoRotateSpeed: 0.5,
@@ -472,8 +472,8 @@ export function Globe() {
 	];
 
 	return (
-		<div className='flex flex-row items-center justify-center h-full md:h-auto bg-white relative w-full'>
-			<div className='max-w-auto mx-auto w-full relative overflow-hidden h-full md:h-[40rem] sm:h-[15rem] px-4'>
+		<div className='items-center justify-center h-full md:h-auto bg-white relative w-full'>
+			<div className='max-w-auto mx-auto w-full relative overflow-hidden h-full xl:h-[40rem] xlg:h-[32rem] lg:h-[45rem] xl:pl-10 md:h-[35rem] sm:h-[15rem] xs:h-[12rem]'>
 				<motion.div
 					initial={{
 						opacity: 0,
@@ -489,7 +489,7 @@ export function Globe() {
 					className='div'
 				></motion.div>
 				<div className='absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40' />
-				<div className='absolute w-full -bottom-20 h-72 md:h-full z-10'>
+				<div className='absolute w-full -bottom-15 h-72 md:h-full z-10'>
 					<World
 						data={[...sampleArcs, ...houseMarkers]}
 						globeConfig={globeConfig}
