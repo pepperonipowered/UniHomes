@@ -3,6 +3,11 @@ import { Star, User, Users2, Warehouse } from 'lucide-react';
 /* eslint-disable sort-keys */
 const spiels = {
 	// Home
+	CTA_LABEL: 'Call to Action',
+	CTA_DESCRIPTION:
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.',
+	FOOTER: '© 2024 UniHomes. All rights reserved.',
+	HERO_BADGE: 'New Release',
 	HERO_DESCRIPTION:
 		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.',
 	HOW_IT_WORKS: 'How It Works',
@@ -76,45 +81,67 @@ const spiels = {
 	BUTTON_SIGN_IN: 'Sign In',
 	BUTTON_SIGN_UP: 'Sign Up',
 	BUTTON_SUBMIT: 'Submit',
+	BUTTON_SUBSCRIBE: 'Subscribe',
 	BUTTON_VIEW: 'View',
 	BUTTON_VIEW_ALL: 'View all',
 
-	//Navbar
-	NAVBAR_MENU_LIST: [
+	NAVBAR_OVERALL_LIST: [
 		{
 			label: 'Home',
 			href: '#home',
-			description: 'Description for Home',
 		},
 		{
 			label: 'Listings',
 			href: '#listings',
-			description: 'Description for Listings',
 		},
 		// For logged in users
 		{
 			label: 'Messages',
 			href: '#messages',
-			description: 'Description for Messages',
 		},
 		{
 			label: 'Favorites',
 			href: '#favorites',
-			description: 'Description for Favorites',
+		},
+	],
+	NAVBAR_MENU_LIST_WITH_DROPDOWN: [
+		{
+			label: 'Home',
+			href: '#home',
+			description: 'Description for Home',
+		},
+	],
+
+	NAVBAR_MENU_LIST_WITHOUT_DROPDOWN: [
+		{
+			label: 'Listings',
+			href: '#listings',
+		},
+		// For logged in users
+		{
+			label: 'Messages',
+			href: '#messages',
+		},
+		{
+			label: 'Favorites',
+			href: '#favorites',
 		},
 	],
 
 	NAVBAR_HOME_MENUCONTENT: [
 		{
 			label: 'Introduction',
+			href: 'home/introduction',
 			description: 'What is UniHomes?',
 		},
 		{
 			label: 'Features',
+			href: 'home/features',
 			description: 'How it works',
 		},
 		{
 			label: 'Reviews and Ratings',
+			href: 'home/reviewsandratings',
 			description: 'Testimonials',
 		},
 	],

@@ -13,15 +13,15 @@ const World = dynamic(
 export function Globe() {
 	const globeConfig = {
 		pointSize: 4,
-		globeColor: '#062056',
+		globeColor: '#0c4a6e',
 		showAtmosphere: true,
-		atmosphereColor: '#FFFFFF',
+		atmosphereColor: '#e0f2fe',
 		atmosphereAltitude: 0.1,
 		emissive: '#062056',
 		emissiveIntensity: 0.1,
 		shininess: 0.9,
-		polygonColor: 'rgba(255,255,255,0.7)',
-		ambientLight: '#38bdf8',
+		polygonColor: 'rgba(255,255,255,255)',
+		ambientLight: '#082f49',
 		directionalLeftLight: '#ffffff',
 		directionalTopLight: '#ffffff',
 		pointLight: '#ffffff',
@@ -399,80 +399,80 @@ export function Globe() {
 	];
 	const houseMarkers = [
 		// North America
-		{ lat: 40.7128, lng: -74.006, size: 1, color: '#FF0000' }, // New York City, USA
-		{ lat: 34.0522, lng: -118.2437, size: 1, color: '#FF0000' }, // Los Angeles, USA
-		{ lat: 37.7749, lng: -122.4194, size: 1, color: '#FF0000' }, // San Francisco, USA
-		{ lat: 47.6062, lng: -122.3321, size: 1, color: '#FF0000' }, // Seattle, USA
-		{ lat: 40.7306, lng: -73.9352, size: 1, color: '#FF0000' }, // Chicago, USA
-		{ lat: 33.4484, lng: -112.074, size: 1, color: '#FF0000' }, // Phoenix, USA
-		{ lat: 19.4326, lng: -99.1332, size: 1, color: '#FF0000' }, // Mexico City, Mexico
-		{ lat: 45.4215, lng: -75.6972, size: 1, color: '#FF0000' }, // Ottawa, Canada
-		{ lat: 49.2827, lng: -123.1207, size: 1, color: '#FF0000' }, // Vancouver, Canada
-		{ lat: 51.2538, lng: -85.3232, size: 1, color: '#FF0000' }, // Toronto, Canada
+		{ lat: 40.7128, lng: -74.006, size: 1, color: '#67e8f9' }, // New York City, USA
+		{ lat: 34.0522, lng: -118.2437, size: 1, color: '#67e8f9' }, // Los Angeles, USA
+		{ lat: 37.7749, lng: -122.4194, size: 1, color: '#67e8f9' }, // San Francisco, USA
+		{ lat: 47.6062, lng: -122.3321, size: 1, color: '#67e8f9' }, // Seattle, USA
+		{ lat: 40.7306, lng: -73.9352, size: 1, color: '#67e8f9' }, // Chicago, USA
+		{ lat: 33.4484, lng: -112.074, size: 1, color: '#67e8f9' }, // Phoenix, USA
+		{ lat: 19.4326, lng: -99.1332, size: 1, color: '#67e8f9' }, // Mexico City, Mexico
+		{ lat: 45.4215, lng: -75.6972, size: 1, color: '#67e8f9' }, // Ottawa, Canada
+		{ lat: 49.2827, lng: -123.1207, size: 1, color: '#67e8f9' }, // Vancouver, Canada
+		{ lat: 51.2538, lng: -85.3232, size: 1, color: '#67e8f9' }, // Toronto, Canada
 
 		// South America
-		{ lat: -34.6037, lng: -58.3816, size: 1, color: '#FF0000' }, // Buenos Aires, Argentina
-		{ lat: -23.5505, lng: -46.6333, size: 1, color: '#FF0000' }, // São Paulo, Brazil
-		{ lat: -22.9068, lng: -43.1729, size: 1, color: '#FF0000' }, // Rio de Janeiro, Brazil
-		{ lat: -15.7801, lng: -47.9292, size: 1, color: '#FF0000' }, // Brasília, Brazil
-		{ lat: -16.5, lng: -68.1193, size: 1, color: '#FF0000' }, // La Paz, Bolivia
-		{ lat: -3.7172, lng: -73.265, size: 1, color: '#FF0000' }, // Manaus, Brazil
-		{ lat: -1.2884, lng: -78.4784, size: 1, color: '#FF0000' }, // Quito, Ecuador
-		{ lat: -12.0464, lng: -77.0428, size: 1, color: '#FF0000' }, // Lima, Peru
-		{ lat: -33.4489, lng: -70.6693, size: 1, color: '#FF0000' }, // Santiago, Chile
-		{ lat: -22.9068, lng: -43.1729, size: 1, color: '#FF0000' }, // Rio de Janeiro, Brazil
+		{ lat: -34.6037, lng: -58.3816, size: 1, color: '#67e8f9' }, // Buenos Aires, Argentina
+		{ lat: -23.5505, lng: -46.6333, size: 1, color: '#67e8f9' }, // São Paulo, Brazil
+		{ lat: -22.9068, lng: -43.1729, size: 1, color: '#67e8f9' }, // Rio de Janeiro, Brazil
+		{ lat: -15.7801, lng: -47.9292, size: 1, color: '#67e8f9' }, // Brasília, Brazil
+		{ lat: -16.5, lng: -68.1193, size: 1, color: '#67e8f9' }, // La Paz, Bolivia
+		{ lat: -3.7172, lng: -73.265, size: 1, color: '#67e8f9' }, // Manaus, Brazil
+		{ lat: -1.2884, lng: -78.4784, size: 1, color: '#67e8f9' }, // Quito, Ecuador
+		{ lat: -12.0464, lng: -77.0428, size: 1, color: '#67e8f9' }, // Lima, Peru
+		{ lat: -33.4489, lng: -70.6693, size: 1, color: '#67e8f9' }, // Santiago, Chile
+		{ lat: -22.9068, lng: -43.1729, size: 1, color: '#67e8f9' }, // Rio de Janeiro, Brazil
 
 		// Europe
-		{ lat: 51.5074, lng: -0.1278, size: 1, color: '#FF0000' }, // London, UK
-		{ lat: 48.8566, lng: 2.3522, size: 1, color: '#FF0000' }, // Paris, France
-		{ lat: 55.7558, lng: 37.6176, size: 1, color: '#FF0000' }, // Moscow, Russia
-		{ lat: 52.52, lng: 13.405, size: 1, color: '#FF0000' }, // Berlin, Germany
-		{ lat: 41.9028, lng: 12.4964, size: 1, color: '#FF0000' }, // Rome, Italy
-		{ lat: 40.4168, lng: -3.7038, size: 1, color: '#FF0000' }, // Madrid, Spain
-		{ lat: 53.3498, lng: -6.2603, size: 1, color: '#FF0000' }, // Dublin, Ireland
-		{ lat: 48.2082, lng: 16.3738, size: 1, color: '#FF0000' }, // Vienna, Austria
-		{ lat: 59.9343, lng: 30.3351, size: 1, color: '#FF0000' }, // St. Petersburg, Russia
-		{ lat: 50.8503, lng: 4.3517, size: 1, color: '#FF0000' }, // Brussels, Belgium
+		{ lat: 51.5074, lng: -0.1278, size: 1, color: '#67e8f9' }, // London, UK
+		{ lat: 48.8566, lng: 2.3522, size: 1, color: '#67e8f9' }, // Paris, France
+		{ lat: 55.7558, lng: 37.6176, size: 1, color: '#67e8f9' }, // Moscow, Russia
+		{ lat: 52.52, lng: 13.405, size: 1, color: '#67e8f9' }, // Berlin, Germany
+		{ lat: 41.9028, lng: 12.4964, size: 1, color: '#67e8f9' }, // Rome, Italy
+		{ lat: 40.4168, lng: -3.7038, size: 1, color: '#67e8f9' }, // Madrid, Spain
+		{ lat: 53.3498, lng: -6.2603, size: 1, color: '#67e8f9' }, // Dublin, Ireland
+		{ lat: 48.2082, lng: 16.3738, size: 1, color: '#67e8f9' }, // Vienna, Austria
+		{ lat: 59.9343, lng: 30.3351, size: 1, color: '#67e8f9' }, // St. Petersburg, Russia
+		{ lat: 50.8503, lng: 4.3517, size: 1, color: '#67e8f9' }, // Brussels, Belgium
 
 		// Africa
-		{ lat: 6.5244, lng: 3.3792, size: 1, color: '#FF0000' }, // Lagos, Nigeria
-		{ lat: -1.2864, lng: 36.8172, size: 1, color: '#FF0000' }, // Nairobi, Kenya
-		{ lat: -33.9189, lng: 18.4233, size: 1, color: '#FF0000' }, // Cape Town, South Africa
-		{ lat: 30.0444, lng: 31.2357, size: 1, color: '#FF0000' }, // Cairo, Egypt
-		{ lat: 12.9716, lng: 77.5946, size: 1, color: '#FF0000' }, // Bangalore, India
-		{ lat: 15.3875, lng: 32.5599, size: 1, color: '#FF0000' }, // Khartoum, Sudan
-		{ lat: -22.5597, lng: 17.0832, size: 1, color: '#FF0000' }, // Windhoek, Namibia
-		{ lat: 36.737232, lng: 3.086472, size: 1, color: '#FF0000' }, // Algiers, Algeria
-		{ lat: 9.082, lng: 8.6753, size: 1, color: '#FF0000' }, // Abuja, Nigeria
-		{ lat: -4.0383, lng: 123.1731, size: 1, color: '#FF0000' }, // Zanzibar City, Tanzania
+		{ lat: 6.5244, lng: 3.3792, size: 1, color: '#67e8f9' }, // Lagos, Nigeria
+		{ lat: -1.2864, lng: 36.8172, size: 1, color: '#67e8f9' }, // Nairobi, Kenya
+		{ lat: -33.9189, lng: 18.4233, size: 1, color: '#67e8f9' }, // Cape Town, South Africa
+		{ lat: 30.0444, lng: 31.2357, size: 1, color: '#67e8f9' }, // Cairo, Egypt
+		{ lat: 12.9716, lng: 77.5946, size: 1, color: '#67e8f9' }, // Bangalore, India
+		{ lat: 15.3875, lng: 32.5599, size: 1, color: '#67e8f9' }, // Khartoum, Sudan
+		{ lat: -22.5597, lng: 17.0832, size: 1, color: '#67e8f9' }, // Windhoek, Namibia
+		{ lat: 36.737232, lng: 3.086472, size: 1, color: '#67e8f9' }, // Algiers, Algeria
+		{ lat: 9.082, lng: 8.6753, size: 1, color: '#67e8f9' }, // Abuja, Nigeria
+		{ lat: -4.0383, lng: 123.1731, size: 1, color: '#67e8f9' }, // Zanzibar City, Tanzania
 
 		// Asia
-		{ lat: 35.6895, lng: 139.6917, size: 1, color: '#FF0000' }, // Tokyo, Japan
-		{ lat: 39.9042, lng: 116.4074, size: 1, color: '#FF0000' }, // Beijing, China
-		{ lat: 37.5665, lng: 126.978, size: 1, color: '#FF0000' }, // Seoul, South Korea
-		{ lat: 1.3521, lng: 103.8198, size: 1, color: '#FF0000' }, // Singapore
-		{ lat: 13.7563, lng: 100.5018, size: 1, color: '#FF0000' }, // Bangkok, Thailand
-		{ lat: 28.6139, lng: 77.209, size: 1, color: '#FF0000' }, // Delhi, India
-		{ lat: 40.7128, lng: 74.006, size: 1, color: '#FF0000' }, // New York, USA (placeholder for global comparisons)
-		{ lat: 22.3193, lng: 114.1694, size: 1, color: '#FF0000' }, // Hong Kong
-		{ lat: 26.9124, lng: 75.7873, size: 1, color: '#FF0000' }, // Jaipur, India
-		{ lat: 37.7749, lng: -122.4194, size: 1, color: '#FF0000' }, // San Francisco, USA (placeholder for global comparisons)
+		{ lat: 35.6895, lng: 139.6917, size: 1, color: '#67e8f9' }, // Tokyo, Japan
+		{ lat: 39.9042, lng: 116.4074, size: 1, color: '#67e8f9' }, // Beijing, China
+		{ lat: 37.5665, lng: 126.978, size: 1, color: '#67e8f9' }, // Seoul, South Korea
+		{ lat: 1.3521, lng: 103.8198, size: 1, color: '#67e8f9' }, // Singapore
+		{ lat: 13.7563, lng: 100.5018, size: 1, color: '#67e8f9' }, // Bangkok, Thailand
+		{ lat: 28.6139, lng: 77.209, size: 1, color: '#67e8f9' }, // Delhi, India
+		{ lat: 40.7128, lng: 74.006, size: 1, color: '#67e8f9' }, // New York, USA (placeholder for global comparisons)
+		{ lat: 22.3193, lng: 114.1694, size: 1, color: '#67e8f9' }, // Hong Kong
+		{ lat: 26.9124, lng: 75.7873, size: 1, color: '#67e8f9' }, // Jaipur, India
+		{ lat: 37.7749, lng: -122.4194, size: 1, color: '#67e8f9' }, // San Francisco, USA (placeholder for global comparisons)
 
 		// Australia
-		{ lat: -33.8688, lng: 151.2093, size: 1, color: '#FF0000' }, // Sydney, Australia
-		{ lat: -37.8136, lng: 144.9631, size: 1, color: '#FF0000' }, // Melbourne, Australia
-		{ lat: -27.4698, lng: 153.0251, size: 1, color: '#FF0000' }, // Brisbane, Australia
-		{ lat: -31.9505, lng: 115.8605, size: 1, color: '#FF0000' }, // Perth, Australia
-		{ lat: -35.2809, lng: 149.13, size: 1, color: '#FF0000' }, // Canberra, Australia
-		{ lat: -28.0167, lng: 153.4, size: 1, color: '#FF0000' }, // Gold Coast, Australia
-		{ lat: -34.9285, lng: 138.6007, size: 1, color: '#FF0000' }, // Adelaide, Australia
-		{ lat: -32.9283, lng: 151.7817, size: 1, color: '#FF0000' }, // Newcastle, Australia
-		{ lat: -23.698, lng: 133.8807, size: 1, color: '#FF0000' }, // Alice Springs, Australia
-		{ lat: -19.2586, lng: 146.8161, size: 1, color: '#FF0000' }, // Townsville, Australia
+		{ lat: -33.8688, lng: 151.2093, size: 1, color: '#67e8f9' }, // Sydney, Australia
+		{ lat: -37.8136, lng: 144.9631, size: 1, color: '#67e8f9' }, // Melbourne, Australia
+		{ lat: -27.4698, lng: 153.0251, size: 1, color: '#67e8f9' }, // Brisbane, Australia
+		{ lat: -31.9505, lng: 115.8605, size: 1, color: '#67e8f9' }, // Perth, Australia
+		{ lat: -35.2809, lng: 149.13, size: 1, color: '#67e8f9' }, // Canberra, Australia
+		{ lat: -28.0167, lng: 153.4, size: 1, color: '#67e8f9' }, // Gold Coast, Australia
+		{ lat: -34.9285, lng: 138.6007, size: 1, color: '#67e8f9' }, // Adelaide, Australia
+		{ lat: -32.9283, lng: 151.7817, size: 1, color: '#67e8f9' }, // Newcastle, Australia
+		{ lat: -23.698, lng: 133.8807, size: 1, color: '#67e8f9' }, // Alice Springs, Australia
+		{ lat: -19.2586, lng: 146.8161, size: 1, color: '#67e8f9' }, // Townsville, Australia
 	];
 
 	return (
-		<div className='items-center justify-center h-full md:h-auto bg-white relative w-full'>
+		<div className='items-center justify-center h-full md:h-auto bg-white relative w-full dark:bg-secondary'>
 			<div className='max-w-auto mx-auto w-full relative overflow-hidden h-full xl:h-[40rem] xlg:h-[32rem] lg:h-[45rem] xl:pl-10 md:h-[35rem] sm:h-[15rem] xs:h-[12rem]'>
 				<motion.div
 					initial={{
@@ -488,7 +488,7 @@ export function Globe() {
 					}}
 					className='div'
 				></motion.div>
-				<div className='absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40' />
+				<div className='absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-secondary	 to-white z-40' />
 				<div className='absolute w-full -bottom-15 h-72 md:h-full z-10'>
 					<World
 						data={[...sampleArcs, ...houseMarkers]}
