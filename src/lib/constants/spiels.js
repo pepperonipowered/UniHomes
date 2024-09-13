@@ -1,3 +1,5 @@
+import { Star, User, Users2, Warehouse } from 'lucide-react';
+
 /* eslint-disable sort-keys */
 const spiels = {
 	// Home
@@ -19,6 +21,34 @@ const spiels = {
 			label: 'Choose Property',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+		},
+	],
+	STATS_LABEL: 'STATS',
+	STATS_HEADER: 'Here are some stats to look at',
+	STATS_DATA: [
+		{
+			label: 'Clients',
+			stat: '21K',
+			description: '+21 since last hour',
+			avatar: User,
+		},
+		{
+			label: 'Properties',
+			stat: '1200',
+			description: '+21 since last hour',
+			avatar: Warehouse,
+		},
+		{
+			label: 'Lessors',
+			stat: '100',
+			description: '+21 since last hour',
+			avatar: Users2,
+		},
+		{
+			label: 'Ratings',
+			stat: '200',
+			description: '+21 since last hour',
+			avatar: Star,
 		},
 	],
 
