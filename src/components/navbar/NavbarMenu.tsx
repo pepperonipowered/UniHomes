@@ -39,7 +39,10 @@ export function NavbarMenu() {
 				))}
 
 				{spiels.NAVBAR_MENU_LIST_WITHOUT_DROPDOWN.map((item, index) => (
-					<NavigationMenuItem key={index}>
+					<NavigationMenuItem
+						key={index}
+						className='dark:text-secondary-foreground'
+					>
 						<Link href={item.href} legacyBehavior passHref>
 							<NavigationMenuLink className={navigationMenuTriggerStyle()}>
 								{item.label}
