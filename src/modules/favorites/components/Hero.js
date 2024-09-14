@@ -22,12 +22,12 @@ export default function HeroSection() {
                         <form className="flex mt-5 w-full max-w-md justify-center">
                             <label htmlFor="search" className="sr-only">{spiels.BUTTON_SEARCH}</label>
                             <div className="relative flex w-full">
-                                <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                                <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-black" />
                                 <input
                                     type="search"
                                     name="search"
                                     id="search"
-                                    className="block w-full rounded-md border-0 bg-input px-10 py-2 text-input placeholder:text-muted-foreground focus:ring-2 focus:ring-accent"
+                                    className="block w-full rounded-md border-0 bg-input px-10 py-2 text-black placeholder:text-muted-foreground focus:ring-2 focus:ring-accent"
                                     placeholder="Search"
                                 />
                             </div>

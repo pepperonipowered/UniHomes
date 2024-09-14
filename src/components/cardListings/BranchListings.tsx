@@ -20,18 +20,18 @@ export default function BranchListings() {
             <div>
               <p>{item.description}</p>
               <div className="flex flex-row">
-                <Badge className="" variant="secondary">{item.amenities}</Badge>
+                <Badge className="relative top-2" variant="secondary">{item.amenities}</Badge>
+                {/* Try to create a map badge here for multiple amenitities. */}
               </div>
             </div>
             }
           header={
-            <div className="flex flex-col">
-                <div className="items-center">
-                    {item.badges === "Featured" && <Badge variant="secondary">Featured</Badge>}
+              <div className="static">
+                <div className="bg-gray-200 h-full w-full aspect-video rounded-lg">
+                  {item.badges === "Featured" && <Badge className="relative left-3/4 m-1" variant="secondary">Featured</Badge>}
                 </div>
-                <div className="bg-gray-200 h-full w-full aspect-video rounded-lg"></div>
-            </div>
-            
+              </div>
+              
           }
           className="shadow-md"
         />
