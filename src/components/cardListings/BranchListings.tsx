@@ -11,32 +11,36 @@ import { Badge } from "../ui/badge";
 
 export default function BranchListings() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto grid-cols-1 md:grid-cols-2 md:auto-rows-[20rem] ">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={
-            <div>
-              <p>{item.description}</p>
-              <div className="flex flex-row">
-                <Badge className="relative top-2" variant="secondary">{item.amenities}</Badge>
-                {/* Try to create a map badge here for multiple amenitities. */}
-              </div>
-            </div>
-            }
-          header={
-              <div className="static">
-                <div className="bg-gray-200 h-full w-full aspect-video rounded-lg">
-                  {item.badges === "Featured" && <Badge className="relative left-3/4 m-1" variant="secondary">Featured</Badge>}
+    <div>
+      {/* Desktop */}
+      <BentoGrid className="max-w-screen mx-auto grid-cols-1 md:grid-cols-2 md:auto-rows-[20rem] ">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={
+              <div>
+                <p>{item.description}</p>
+                <div className="flex flex-row">
+                  <Badge className="relative top-2" variant="secondary">{item.amenities}</Badge>
+                  {/* Try to create a map badge here for multiple amenitities. */}
                 </div>
               </div>
-              
-          }
-          className="shadow-md"
-        />
-      ))}
-    </BentoGrid>
+              }
+            header={
+                <div className="static">
+                  <div className="bg-gray-200 h-full w-full aspect-video rounded-lg">
+                    {item.badges === "Featured" && <Badge className="relative left-3/4 m-1" variant="secondary">Featured</Badge>}
+                  </div>
+                </div>
+                
+            }
+            className="shadow-md"
+          />
+        ))}
+      </BentoGrid>
+    </div>
+    
   );
 }
 

@@ -6,10 +6,24 @@ import HeroSection from '@/modules/favorites/components/Hero';
 export default function FavoritesScreen() {
     return (
         <div>
-            <NavBar/>
-            <div className='min-h-screen flex justify-center'>
-                <HeroSection/>
-                <FavoriteListings/>
+            {/* DESKTOP */}
+            <div className='hidden lg:block'>
+                <NavBar/>
+                <div className='min-h-screen flex justify-center'>
+                    <HeroSection/>
+                    <FavoriteListings/>
+                </div>
+            </div>
+
+            {/* MOBILE */} 
+            <div className='lg:hidden'>
+                <NavBar/>
+                <div className='min-h-screen flex justify-center'>
+                    <HeroSection/>
+                </div>
+                <div className='min-h-screen flex justify-center'>
+                    <FavoriteListings/>
+                </div>
             </div>
         </div>
     );
