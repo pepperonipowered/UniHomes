@@ -84,6 +84,9 @@ const spiels = {
 	BUTTON_SUBSCRIBE: 'Subscribe',
 	BUTTON_VIEW: 'View',
 	BUTTON_VIEW_ALL: 'View all',
+	BUTTON_SHOW_LISTINGS: 'Show Listings',
+	BUTTON_BACK_HOME: 'Back to Home',
+	BUTTON_SEARCH: 'Search',
 
 	NAVBAR_OVERALL_LIST: [
 		{
