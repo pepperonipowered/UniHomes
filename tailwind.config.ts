@@ -7,6 +7,7 @@ const config: Config = {
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/modules/**/*.{js,ts,jsx,tsx,mdx}",
+		'./src/modules/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
         extend: {
@@ -81,6 +82,16 @@ const config: Config = {
                 "collapsible-down": "collapsible-down 0.2s ease-out",
                 "collapsible-up": "collapsible-up 0.2s ease-out",
             },
+			screens: {
+				xs: '340px',
+				sm: '640px',
+				md: '768px',
+				lg: '1024px',
+				xlg: '1025px',
+				xxl: '1060px',
+				xl: '1280px',
+				'2xl': '1536px',
+			},
         },
     },
     plugins: [require("tailwindcss-animate")],

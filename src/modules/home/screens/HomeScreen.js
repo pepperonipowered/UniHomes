@@ -1,7 +1,38 @@
 import Hero from '../components/Hero';
+import HowItWorks from '../components/HowItWorks';
+import Stats from '../components/Stats';
+import Testimonials from '../components/Testimonials';
+import CTA from '../components/CTA';
+import Footer from '../components/Footer';
+import { TracingBeam } from '@/components/ui/tracing-beam';
 
 const HomeScreen = () => {
-	return <Hero />;
+	return (
+		<>
+			<section className='dark:bg-secondary'>
+				{/* <section className='relative before:absolute before:inset-0 before:bg-primary/10 before:[mask-image:url(https://www.shadcnblocks.com/images/block/waves.svg)] before:[mask-repeat:repeat] before:[mask-size:_64px_32px]'> */}
+				<TracingBeam>
+					<section>
+						<Hero />
+					</section>
+					<section className='py-16 px-32 xl:py-10 md:py-8'>
+						<HowItWorks />
+					</section>
+					<section className='py-16 px-32 xl:py-10 md:py-8'>
+						<Stats />
+					</section>
+					<section className='py-16 px-32 xl:py-10 md:py-8'>
+						<Testimonials />
+					</section>
+					<section className='py-10 px-32 xl:py-10 md:py-8'>
+						<CTA />
+					</section>
+				</TracingBeam>
+				<Footer />
+				{/* </section> */}
+			</section>
+		</>
+	);
 };
 
 export default HomeScreen;
