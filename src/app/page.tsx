@@ -1,11 +1,13 @@
 import NavBar from '@/components/navbar/Navbar';
-import HomeScreen from '@/modules/home/screens/HomeScreen';
+import { MessagesScreen } from '@/modules/messages/screens/MessagesScreen';
+// import HomeScreen from '@/modules/home/screens/HomeScreen';
 
 export default function Home() {
 	return (
 		<div>
 			<NavBar />
-			<HomeScreen />
+			{/* <HomeScreen /> */}
+			<MessagesScreen />
 		</div>
 	);
 }

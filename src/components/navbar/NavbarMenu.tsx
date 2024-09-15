@@ -21,14 +21,18 @@ export function NavbarMenu() {
 			<NavigationMenuList>
 				{spiels.NAVBAR_MENU_LIST_WITH_DROPDOWN.map((item, index) => (
 					<NavigationMenuItem key={index}>
-						<NavigationMenuTrigger>{item.label}</NavigationMenuTrigger>
+						<NavigationMenuTrigger>
+							<Link href={item.href} legacyBehavior passHref>
+								{item.label}
+							</Link>
+						</NavigationMenuTrigger>
 						<NavigationMenuContent>
 							<ul className='grid gap-3 p-6 md:w-[400px] lg:w-[500px]'>
 								{spiels.NAVBAR_HOME_MENUCONTENT.map((component) => (
 									<ListItem
 										key={component.label}
 										title={component.label}
-										href={component.href}
+										href={`#${component.href.split('/').pop()}`}
 									>
 										{component.description}
 									</ListItem>
