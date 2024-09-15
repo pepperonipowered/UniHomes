@@ -49,7 +49,7 @@ const Branch = () => {
                   </CardHeader>
                   <CardFooter>
                       <Link
-                          href={"/branch/room"}
+                          href={"/branch"}
                           className={buttonVariants({ variant: "secondary" })}
                       >
                           See more
