@@ -1,12 +1,11 @@
-import NavBar from "@/components/navbar/Navbar";
 import HomeScreen from "@/modules/home/screens/HomeScreen";
-import Profile_Hosting from "@/modules/profile/screens/Profile_Hosting";
+import NavBar from "@/components/navbar/Navbar";
 
 export default function Home() {
-  return (
-    <div>
-      <NavBar />
-      <Profile_Hosting />
-    </div>
-  );
+	return (
+		<div className=''>
+			<NavBar />
+            <HomeScreen />
+		</div>
+	);
 }

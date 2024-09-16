@@ -22,7 +22,7 @@ function NavBar() {
 				<div className='flex justify-between mx-2 md:mx-[30px] items-center'>
 					<div>
 						<Image
-							src='/Logo1.png'
+							src='/Logo.png'
 							alt='Logo'
 							width={160}
 							height={80}
@@ -45,7 +45,7 @@ function NavBar() {
 			>
 				<div className='flex justify-between mx-[10px] items-center'>
 					<Image
-						src='/logo1.png'
+						src='/logo.png'
 						alt='logo'
 						width={112}
 						height={28}

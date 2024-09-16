@@ -38,7 +38,7 @@ const Hero = () => {
 						</Button>
 						<Button
 							variant='outline'
-							className='w-full sm:w-auto dark:bg-accent-foreground dark:text-secondary'
+							className='w-full sm:w-auto dark:bg-accent-foreground dark:text-secondary hover:bg-accent'
 						>
 							{spiels.BUTTON_LEARN_MORE}
 							<ArrowDownRight className='ml-2 size-4' />
