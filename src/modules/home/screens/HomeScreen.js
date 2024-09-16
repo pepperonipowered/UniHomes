@@ -12,16 +12,19 @@ const HomeScreen = () => {
 			<section className='dark:bg-secondary'>
 				{/* <section className='relative before:absolute before:inset-0 before:bg-primary/10 before:[mask-image:url(https://www.shadcnblocks.com/images/block/waves.svg)] before:[mask-repeat:repeat] before:[mask-size:_64px_32px]'> */}
 				<TracingBeam>
-					<section>
+					<section id='introduction' className='py-16'>
 						<Hero />
 					</section>
-					<section className='py-16 px-32 xl:py-10 md:py-8'>
+					<section id='features' className='py-16 px-32 xl:py-10 md:py-8'>
 						<HowItWorks />
 					</section>
-					<section className='py-16 px-32 xl:py-10 md:py-8'>
+					<section id='stats' className='py-16 px-32 xl:py-10 md:py-8'>
 						<Stats />
 					</section>
-					<section className='py-16 px-32 xl:py-10 md:py-8'>
+					<section
+						id='reviewsandratings'
+						className='py-16 px-32 xl:py-10 md:py-8'
+					>
 						<Testimonials />
 					</section>
 					<section className='py-10 px-32 xl:py-10 md:py-8'>

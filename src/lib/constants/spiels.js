@@ -59,6 +59,11 @@ const spiels = {
 	TESTIMONIALS_LABEL: 'TESTIMONIALS',
 	TESTIMONIALS_HEADER: 'Meet our happy clients',
 
+	// Messages
+	MESSAGES_HEADER: 'Inbox',
+	MESSAGES_NO_RESULT: 'No results found.',
+	MESSAGES_NO_CHATS_SELECTED: 'No chats selected.',
+
 	// Buttons
 	BUTTON_BACK: 'Back',
 	BUTTON_BOOK_NOW: 'Book Now',
@@ -76,6 +81,7 @@ const spiels = {
 	BUTTON_PROCEED: 'Proceed',
 	BUTTON_RESET_FILTER: 'Reset Filters',
 	BUTTON_SAVE: 'Save',
+	BUTTON_SEND: 'Send',
 	BUTTON_SEND_RESET_REQUEST: 'Send Reset Request',
 	BUTTON_SET_APPOINTMENT: 'Set Appointment',
 	BUTTON_SIGN_IN: 'Sign In',
@@ -134,20 +140,23 @@ const spiels = {
 	NAVBAR_HOME_MENUCONTENT: [
 		{
 			label: 'Introduction',
-			href: 'home/introduction',
+			href: 'introduction',
 			description: 'What is UniHomes?',
 		},
 		{
 			label: 'Features',
-			href: 'home/features',
+			href: 'features',
 			description: 'How it works',
 		},
 		{
 			label: 'Reviews and Ratings',
-			href: 'home/reviewsandratings',
+			href: 'reviewsandratings',
 			description: 'Testimonials',
 		},
 	],
+
+	TAB_ALL: 'All',
+	TAB_UNREAD: 'Unread',
 };
 
 export default spiels;
