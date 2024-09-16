@@ -83,7 +83,9 @@ const Profile = () => {
                   date > new Date() || date < new Date("1900-01-01")
                 }
                 initialFocus
-                captionLayout="dropdown" // Enables dropdowns for month and year
+                captionLayout="dropdown-buttons"
+                fromYear={1900}
+                toYear={new Date().getFullYear()}
               />
             </PopoverContent>
           </Popover>

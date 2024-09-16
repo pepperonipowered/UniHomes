@@ -25,7 +25,11 @@
     "@radix-ui/react-tooltip": "^1.1.2",
     "@react-three/drei": "^9.112.0",
     "@react-three/fiber": "^8.17.7",
+<<<<<<< HEAD
     "@tabler/icons-react": "^3.16.0",
+=======
+    "@tabler/icons-react": "^3.17.0",
+>>>>>>> 1038fa4995b1235bad15ccb8e1e9b93590c51c1e
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "date-fns": "^2.30.0",
