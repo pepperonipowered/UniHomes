@@ -13,10 +13,10 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
-import { format } from "date-fns"; // For formatting date
+import { format } from "date-fns";
 
 const Profile = () => {
-  const [date, setDate] = useState(null); // State for selected date
+  const [date, setDate] = useState(null);
 
   return (
     <section className="w-full p-2">
@@ -61,7 +61,6 @@ const Profile = () => {
             className="border-2 border-gray-300 focus:border-gray-500 transition-all duration-200"
           />
 
-          {/* Date of Birth Section with Calendar */}
           <Label>Date of Birth</Label>
           <Popover>
             <PopoverTrigger asChild>
@@ -76,14 +75,14 @@ const Profile = () => {
             <PopoverContent className="w-auto p-0" align="start">
               <Calendar
                 mode="single"
-                selected={date}
-                onSelect={setDate}
                 className="rounded-md"
                 disabled={(date) =>
                   date > new Date() || date < new Date("1900-01-01")
                 }
                 initialFocus
-                captionLayout="dropdown" // Enables dropdowns for month and year
+                captionLayout="dropdown-buttons"
+                fromYear={1900}
+                toYear={new Date().getFullYear()}
               />
             </PopoverContent>
           </Popover>
