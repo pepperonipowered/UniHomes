@@ -1,13 +1,9 @@
-import NavBar from '@/components/navbar/Navbar';
-import { MessagesScreen } from '@/modules/messages/screens/MessagesScreen';
-// import HomeScreen from '@/modules/home/screens/HomeScreen';
+import FavoritesScreen from '@/modules/favorites/screens/FavoritesScreen';
 
 export default function Home() {
 	return (
-		<div>
-			<NavBar />
-			{/* <HomeScreen /> */}
-			<MessagesScreen />
+		<div className=''>
+			<FavoritesScreen />
 		</div>
 	);
 }
