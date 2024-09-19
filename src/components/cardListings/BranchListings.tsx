@@ -1,71 +1,91 @@
-import { cn } from "@/lib/utils";
-import React from "react";
-import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
-import {
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
-import { Badge } from "../ui/badge";
+import React from 'react';
+import { BentoGrid, BentoGridItem } from '../ui/bento-grid';
+import { Badge } from '../ui/badge';
+import { Star } from 'lucide-react';
 
-export default function BranchListings() {
-  return (
-    <div>
-      {/* Desktop */}
-      <BentoGrid className="max-w-screen mx-auto grid-cols-1 md:grid-cols-2 md:auto-rows-[20rem] ">
-        {items.map((item, i) => (
-          <BentoGridItem
-            key={i}
-            title={item.title}
-            description={
-              <div>
-                <p>{item.description}</p>
-                <div className="flex flex-row">
-                  <Badge className="relative top-2" variant="secondary">{item.amenities}</Badge>
-                  {/* Try to create a map badge here for multiple amenitities. */}
-                </div>
-              </div>
-              }
-            header={
-                <div className="static">
-                  <div className="bg-gray-200 h-full w-full aspect-video rounded-lg">
-                    {item.badges === "Featured" && <Badge className="relative left-3/4 m-1" variant="secondary">Featured</Badge>}
-                  </div>
-                </div>
-                
-            }
-            className="shadow-md"
-          />
-        ))}
-      </BentoGrid>
-    </div>
-    
-  );
+interface Amenity {
+	amenity_name: string;
+	value: boolean;
+}
+interface BranchlistingsProps {
+	id: number;
+	title: string;
+	description: string;
+	price: number;
+	featured: boolean;
+	amenities: Amenity[];
+	lessor_name: string;
 }
 
-//This should be dynamic, fetched from the database
-const items = [
-  {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    badges: "Featured",
-    amenities: "May Tabo",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    badges: "Featured",
-    amenities: "May Tabo",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    badges: "",
-    amenities: "Walang Tabo",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-  },
-];
-
+export default function BranchListings({
+	title,
+	description,
+	featured,
+	price,
+}: // amenities,
+BranchlistingsProps) {
+	const formattedPrice = new Intl.NumberFormat('en-PH', {
+		style: 'currency',
+		currency: 'PHP',
+		minimumFractionDigits: 0,
+		maximumFractionDigits: 0,
+	}).format(price);
+	return (
+		<div>
+			<BentoGrid className='max-w-screen mx-auto'>
+				<BentoGridItem
+					title={
+						<div className='flex items-center justify-between'>
+							<span className='sm:text-sm xs:text-xs line-clamp-1'>
+								{title}
+							</span>
+							<div className='flex items-center'>
+								<Star className='h-4 w-4 text-yellow-500' fill='#eab308' />
+								<span className='ml-1 text-sm xs:text-xs'>4.5</span>
+							</div>
+						</div>
+					}
+					description={
+						<div>
+							<p className='line-clamp-1'>{description}</p>
+							<div className='flex flex-row mt-2'>
+								{/* {amenities.map((item, id) =>
+									item.value ? (
+										<Badge
+											className='relative top-2 dark:bg-white dark:text-card'
+											variant='secondary'
+											key={id}
+										>
+											{item.amenity_name}
+										</Badge>
+									) : null
+								)} */}
+								<span className='font-bold mr-1'>{formattedPrice}</span> month
+							</div>
+						</div>
+					}
+					header={
+						<div className='relative'>
+							<div className='bg-gray-200 w-full h-[170px] rounded-lg overflow-hidden'>
+								<img
+									src={'https://picsum.photos/400/250'}
+									alt='Thumbnail'
+									className='w-full h-full object-cover'
+								/>
+								{featured && (
+									<Badge
+										className='absolute right-2 top-2 bg-primary text-white'
+										variant='secondary'
+									>
+										Featured
+									</Badge>
+								)}
+							</div>
+						</div>
+					}
+					className='shadow-sm h-auto flex flex-col justify-between p-4'
+				/>
+			</BentoGrid>
+		</div>
+	);
+}
