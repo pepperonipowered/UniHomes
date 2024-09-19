@@ -36,7 +36,9 @@ BranchlistingsProps) {
 				<BentoGridItem
 					title={
 						<div className='flex items-center justify-between'>
-							<span className='sm:text-sm xs:text-xs'>{title}</span>
+							<span className='sm:text-sm xs:text-xs line-clamp-1'>
+								{title}
+							</span>
 							<div className='flex items-center'>
 								<Star className='h-4 w-4 text-yellow-500' fill='#eab308' />
 								<span className='ml-1 text-sm xs:text-xs'>4.5</span>
