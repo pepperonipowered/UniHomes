@@ -82,6 +82,240 @@ const tempValues = {
 			read: true,
 		},
 	],
+
+	//LISTINGS
+	LISTINGS: [
+		{
+			id: 1,
+			title: 'Urban Oasis',
+			description: 'Discover the calm and tranquility of city living in style.',
+			price: 2500,
+			featured: true,
+			amenities: [
+				{
+					amenity_name: 'Air Conditioning',
+					value: true,
+				},
+				{
+					amenity_name: 'Dryer',
+					value: true,
+				},
+				{
+					amenity_name: 'Essentials',
+					value: true,
+				},
+				{
+					amenity_name: 'Heating',
+					value: true,
+				},
+				{
+					amenity_name: 'Hot Water',
+					value: false,
+				},
+				{
+					amenity_name: 'Kitchen',
+					value: false,
+				},
+				{
+					amenity_name: 'TV',
+					value: true,
+				},
+				{
+					amenity_name: 'Washer',
+					value: true,
+				},
+				{
+					amenity_name: 'Wifi',
+					value: true,
+				},
+			],
+			lessor_name: 'John Doe',
+		},
+		{
+			id: 2,
+			title: 'Maple Retreat',
+			description: 'An escape from the hustle, with all the modern amenities.',
+			price: 2200,
+			featured: true,
+			amenities: [
+				{
+					amenity_name: 'Air Conditioning',
+					value: true,
+				},
+				{
+					amenity_name: 'Dryer',
+					value: false,
+				},
+				{
+					amenity_name: 'Essentials',
+					value: true,
+				},
+				{
+					amenity_name: 'Heating',
+					value: false,
+				},
+				{
+					amenity_name: 'Hot Water',
+					value: true,
+				},
+				{
+					amenity_name: 'Kitchen',
+					value: false,
+				},
+				{
+					amenity_name: 'TV',
+					value: true,
+				},
+				{
+					amenity_name: 'Washer',
+					value: true,
+				},
+				{
+					amenity_name: 'Wifi',
+					value: true,
+				},
+			],
+			lessor_name: 'Jane Smith',
+		},
+		{
+			id: 3,
+			title: 'Greenfield Getaway',
+			description: 'Sustainable living in the heart of the city.',
+			price: 2000,
+			featured: true,
+			amenities: [
+				{
+					amenity_name: 'Air Conditioning',
+					value: false,
+				},
+				{
+					amenity_name: 'Dryer',
+					value: true,
+				},
+				{
+					amenity_name: 'Essentials',
+					value: false,
+				},
+				{
+					amenity_name: 'Heating',
+					value: false,
+				},
+				{
+					amenity_name: 'Hot Water',
+					value: true,
+				},
+				{
+					amenity_name: 'Kitchen',
+					value: false,
+				},
+				{
+					amenity_name: 'TV',
+					value: true,
+				},
+				{
+					amenity_name: 'Washer',
+					value: true,
+				},
+				{
+					amenity_name: 'Wifi',
+					value: true,
+				},
+			],
+			lessor_name: 'Emily Johnson',
+		},
+		{
+			id: 4,
+			title: 'Riverfront Haven',
+			description: 'Wake up to serene riverside views every day.',
+			price: 2300,
+			featured: false,
+			amenities: [
+				{
+					amenity_name: 'Air Conditioning',
+					value: true,
+				},
+				{
+					amenity_name: 'Dryer',
+					value: false,
+				},
+				{
+					amenity_name: 'Essentials',
+					value: false,
+				},
+				{
+					amenity_name: 'Heating',
+					value: false,
+				},
+				{
+					amenity_name: 'Hot Water',
+					value: true,
+				},
+				{
+					amenity_name: 'Kitchen',
+					value: true,
+				},
+				{
+					amenity_name: 'TV',
+					value: false,
+				},
+				{
+					amenity_name: 'Washer',
+					value: false,
+				},
+				{
+					amenity_name: 'Wifi',
+					value: true,
+				},
+			],
+			lessor_name: 'Michael Brown',
+		},
+		{
+			id: 5,
+			title: 'Hilltop Sanctuary',
+			description: 'A peaceful sanctuary overlooking the bustling city below.',
+			price: 2100,
+			featured: false,
+			amenities: [
+				{
+					amenity_name: 'Air Conditioning',
+					value: true,
+				},
+				{
+					amenity_name: 'Dryer',
+					value: true,
+				},
+				{
+					amenity_name: 'Essentials',
+					value: false,
+				},
+				{
+					amenity_name: 'Heating',
+					value: false,
+				},
+				{
+					amenity_name: 'Hot Water',
+					value: false,
+				},
+				{
+					amenity_name: 'Kitchen',
+					value: false,
+				},
+				{
+					amenity_name: 'TV',
+					value: true,
+				},
+				{
+					amenity_name: 'Washer',
+					value: false,
+				},
+				{
+					amenity_name: 'Wifi',
+					value: false,
+				},
+			],
+			lessor_name: 'Sarah Davis',
+		},
+	],
 };
 
 export default tempValues;
