@@ -94,7 +94,7 @@ export function MessagesSection() {
 
 	return (
 		<section className='h-screen max-h-[calc(97vh-64px)] dark:bg-secondary bg-white xs:pt-36 sm:pt-36 lg:pt-0'>
-			<Card className='h-full m-2 lg:m-2 md:m-2 bg-white'>
+			<Card className='h-full m-2 lg:m-2 md:m-2 bg-white dark:bg-secondary'>
 				<ResizablePanelGroup direction='horizontal' className='h-full'>
 					{/* 1ST COL: Message List with scroll */}
 					<ResizablePanel
@@ -260,7 +260,7 @@ export function MessagesSection() {
 														</AvatarFallback>
 													</Avatar>
 													<div
-														className={`p-2 rounded-lg sm:w-2/4 xs:w-1/4 lg:w-3/4 md:w-3/4 ${
+														className={`p-2 rounded-lg max-w-auto ${
 															msg.startsWith('You:')
 																? 'bg-blue-100 text-right ml-2 dark:bg-muted dark:text-input'
 																: 'bg-gray-100 mr-2 dark:bg-accent dark:text-background'

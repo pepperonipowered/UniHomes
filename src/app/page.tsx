@@ -1,12 +1,11 @@
-import HomeScreen from "@/modules/home/screens/HomeScreen";
-import NavBar from "@/components/navbar/Navbar";
-import Terms_Conditions from "@/modules/terms_and_conditions/screen/Terms_Conditions";
+import NavBar from '@/components/navbar/Navbar';
+import { AdminDashboardScreen } from '@/modules/admin-dashboard/screen/AdminDashboardScreen';
 
-export default function Home() {
-  return (
-    <div className="">
-      <NavBar />
-      <Terms_Conditions />
-    </div>
-  );
+export default async function Home() {
+	return (
+		<div className=''>
+			<NavBar />
+			<AdminDashboardScreen />
+		</div>
+	);
 }
