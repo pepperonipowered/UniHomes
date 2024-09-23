@@ -9,6 +9,11 @@ const tempValues = {
 			dorm_name: 'Sunset Residences',
 			email: 'johndoe@gmail.com',
 			contact: '09123456789',
+			birthdate: '1990-01-15',
+			address: '123 Pine St, Baguio City',
+			govIdUrl: 'https://example.com/images/johndoe_gov_id.jpg',
+			businessLicenseUrl:
+				'https://example.com/images/johndoe_business_license.jpg',
 			read: false,
 		},
 		{
@@ -19,6 +24,11 @@ const tempValues = {
 			dorm_name: 'Maple Heights',
 			email: 'janes@gmail.com',
 			contact: '09123456723',
+			birthdate: '1992-02-20',
+			address: '456 Oak Ave, Baguio City',
+			govIdUrl: 'https://example.com/images/johndoe_gov_id.jpg',
+			businessLicenseUrl:
+				'https://example.com/images/johndoe_business_license.jpg',
 			read: true,
 		},
 		{
@@ -29,6 +39,11 @@ const tempValues = {
 			dorm_name: 'Greenfield Apartments',
 			email: 'emilyjohnson@gmail.com',
 			contact: '09123456777',
+			birthdate: '1991-03-05',
+			address: '789 Maple Dr, Baguio City',
+			govIdUrl: 'https://example.com/images/johndoe_gov_id.jpg',
+			businessLicenseUrl:
+				'https://example.com/images/johndoe_business_license.jpg',
 			read: true,
 		},
 		{
@@ -39,6 +54,11 @@ const tempValues = {
 			dorm_name: 'River View Flats',
 			email: 'michbro@gmail.com',
 			contact: '09123456712',
+			birthdate: '1989-04-10',
+			address: '321 Birch Ln, Baguio City',
+			govIdUrl: 'https://example.com/images/johndoe_gov_id.jpg',
+			businessLicenseUrl:
+				'https://example.com/images/johndoe_business_license.jpg',
 			read: true,
 		},
 		{
@@ -49,6 +69,11 @@ const tempValues = {
 			dorm_name: 'Hilltop Residences',
 			email: 'sarahd@gmail.com',
 			contact: '09123456569',
+			birthdate: '1993-05-25',
+			address: '654 Cedar St, Baguio City',
+			govIdUrl: 'https://example.com/images/johndoe_gov_id.jpg',
+			businessLicenseUrl:
+				'https://example.com/images/johndoe_business_license.jpg',
 			read: true,
 		},
 		{
@@ -59,6 +84,11 @@ const tempValues = {
 			dorm_name: 'Lakeside Apartments',
 			email: 'davidwil@gmail.com',
 			contact: '09123986789',
+			birthdate: '1994-06-30',
+			address: '987 Spruce Rd, Baguio City',
+			govIdUrl: 'https://example.com/images/johndoe_gov_id.jpg',
+			businessLicenseUrl:
+				'https://example.com/images/johndoe_business_license.jpg',
 			read: false,
 		},
 		{
@@ -69,6 +99,11 @@ const tempValues = {
 			dorm_name: 'Cedar Grove Apartments',
 			email: 'olivmar@gmail.com',
 			contact: '09323456789',
+			birthdate: '1995-07-15',
+			address: '246 Fir St, Baguio City',
+			govIdUrl: 'https://example.com/images/johndoe_gov_id.jpg',
+			businessLicenseUrl:
+				'https://example.com/images/johndoe_business_license.jpg',
 			read: true,
 		},
 		{
@@ -79,6 +114,11 @@ const tempValues = {
 			dorm_name: 'Cedar Grove Apartments',
 			email: 'rohan@gmail.com',
 			contact: '09323498789',
+			birthdate: '1996-08-20',
+			address: '369 Willow Way, Baguio City',
+			govIdUrl: 'https://example.com/images/johndoe_gov_id.jpg',
+			businessLicenseUrl:
+				'https://example.com/images/johndoe_business_license.jpg',
 			read: true,
 		},
 	],

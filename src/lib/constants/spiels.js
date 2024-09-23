@@ -2,6 +2,10 @@ import { Star, User, Users2, Warehouse } from 'lucide-react';
 
 /* eslint-disable sort-keys */
 const spiels = {
+	// Admin
+	ADMIN_CARD_HEADER: 'New Lessors',
+	ADMIN_MODAL_HEADER: 'New Lessor Approval',
+
 	// Home
 	CTA_LABEL: 'Call to Action',
 	CTA_DESCRIPTION:
@@ -70,6 +74,9 @@ const spiels = {
 	MESSAGES_NO_CHATS_SELECTED: 'No chats selected.',
 
 	// Buttons
+	BUTTON_APPROVE: 'Approve',
+	BUTTON_YES_APPROVE: 'Yes, Approve',
+	BUTTON_YES_REJECT: 'Yes, Reject',
 	BUTTON_BACK: 'Back',
 	BUTTON_BOOK_NOW: 'Book Now',
 	BUTTON_CANCEL: 'Cancel',
@@ -84,6 +91,7 @@ const spiels = {
 	BUTTON_LOGIN: 'Login',
 	BUTTON_NEXT: 'Next',
 	BUTTON_PROCEED: 'Proceed',
+	BUTTON_REJECT: 'Reject',
 	BUTTON_RESET_FILTER: 'Reset Filters',
 	BUTTON_SAVE: 'Save',
 	BUTTON_SEND: 'Send',
@@ -98,6 +106,17 @@ const spiels = {
 	BUTTON_SHOW_LISTINGS: 'Show Listings',
 	BUTTON_BACK_HOME: 'Back to Home',
 	BUTTON_SEARCH: 'Search',
+
+	// INPUT FIELDS
+	FORM_ADDRESS: 'Address',
+	FORM_NAME: 'Name',
+	FORM_EMAIL: 'Email',
+	FORM_CONTACT_NUMBER: 'Contact Number',
+	FORM_BIRTHDATE: 'Date of birth',
+	FORM_GOVERNMENT_ID: 'Government ID',
+	FORM_VIEW_GOVERNMENT_ID: 'View Government ID',
+	FORM_BUSINESS_LICENSE: 'Business License',
+	FORM_VIEW_BUSINESS_LICENSE: 'View Business License',
 
 	NAVBAR_OVERALL_LIST: [
 		{
@@ -159,6 +178,12 @@ const spiels = {
 			description: 'Testimonials',
 		},
 	],
+
+	//MODALS
+	MODAL_APPROVE: 'Confirm Approval',
+	MODAL_APPROVE_HEADER: 'Are you sure you want to approve this lessor?',
+	MODAL_REJECT: 'Confirm Rejection',
+	MODAL_REJECTION_HEADER: 're you sure you want to reject this lessor?',
 };
 
 export default spiels;
