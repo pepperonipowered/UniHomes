@@ -128,7 +128,8 @@ const tempValues = {
 		{
 			id: 1,
 			title: 'Urban Oasis',
-			description: 'Discover the calm and tranquility of city living in style.',
+			description:
+				'Urban Oasis is your home away from home in the heart of Baguio City, designed to provide students and young professionals with a comfortable and affordable living space. Our facility offers fully furnished rooms, high-speed internet, and modern amenities, all within walking distance of major universities and city attractions. With a vibrant community atmosphere and dedicated staff, we foster personal growth and academic success, ensuring a safe and supportive environment for all residents. Join us at Marandnest Dormitory and experience the perfect blend of comfort, convenience, and community!',
 			price: 2500,
 			featured: true,
 			amenities: [
@@ -354,6 +355,197 @@ const tempValues = {
 				},
 			],
 			lessor_name: 'Sarah Davis',
+		},
+	],
+
+	// BRANCHES AND ROOMS
+	BRANCHES_AND_ROOMS: [
+		{
+			id: 1,
+			branch: 'Baguio City',
+			available_rooms: [
+				{
+					room_id: 1,
+					room_title: 'College Girls Only Room',
+					room_capacity: 4,
+					lifestyle: 'Student',
+					description:
+						'Discover the calm and tranquility of city living in style.',
+					price: 2500,
+					availability: true,
+				},
+				{
+					room_id: 2,
+					room_title: 'Mixed Dormitory Room',
+					room_capacity: 6,
+					lifestyle: 'Student',
+					description:
+						'Discover the calm and tranquility of city living in style.',
+					price: 2500,
+					availability: true,
+				},
+				{
+					room_id: 3,
+					room_title: 'Private Room for Professionals',
+					room_capacity: 1,
+					lifestyle: 'Professional',
+					description:
+						'Discover the calm and tranquility of city living in style.',
+					price: 2500,
+					availability: false,
+				},
+				{
+					room_id: 4,
+					room_title: 'Private Room for Studious',
+					room_capacity: 1,
+					lifestyle: 'Students',
+					description:
+						'Discover the calm and tranquility of city living in style.',
+					price: 2500,
+					availability: false,
+				},
+			],
+		},
+		{
+			id: 2,
+			branch: 'Manila',
+			available_rooms: [
+				{
+					room_id: 5,
+					room_title: 'College Boys Only Room',
+					room_capacity: 4,
+					lifestyle: 'Student',
+					description:
+						'Discover the calm and tranquility of city living in style.',
+					price: 2500,
+					availability: true,
+				},
+				{
+					room_id: 6,
+					room_title: 'Premium Studio Room',
+					room_capacity: 2,
+					lifestyle: 'Professional',
+					description:
+						'Discover the calm and tranquility of city living in style.',
+					price: 2500,
+					availability: true,
+				},
+			],
+		},
+		{
+			id: 3,
+			branch: 'Cebu City',
+			available_rooms: [
+				{
+					room_id: 7,
+					room_title: 'Family Room',
+					room_capacity: 5,
+					lifestyle: 'Family',
+					description:
+						'Discover the calm and tranquility of city living in style.',
+					price: 2500,
+					availability: true,
+				},
+				{
+					room_id: 8,
+					room_title: 'Shared Room for Students',
+					room_capacity: 8,
+					lifestyle: 'Student',
+					description:
+						'Discover the calm and tranquility of city living in style.',
+					price: 2500,
+					availability: false,
+				},
+				{
+					room_id: 9,
+					room_title: 'Executive Suite',
+					room_capacity: 1,
+					lifestyle: 'Professional',
+					description:
+						'Discover the calm and tranquility of city living in style.',
+					price: 2500,
+					availability: true,
+				},
+			],
+		},
+		{
+			id: 4,
+			branch: 'La Union',
+			available_rooms: [
+				{
+					room_id: 1,
+					room_title: 'College Girls Only Room',
+					room_capacity: 4,
+					lifestyle: 'Student',
+					description:
+						'Discover the calm and tranquility of city living in style.',
+					price: 2500,
+					availability: true,
+				},
+				{
+					room_id: 2,
+					room_title: 'Mixed Dormitory Room',
+					room_capacity: 6,
+					lifestyle: 'Student',
+					description:
+						'Discover the calm and tranquility of city living in style.',
+					price: 2500,
+					availability: true,
+				},
+				{
+					room_id: 3,
+					room_title: 'Private Room for Professionals',
+					room_capacity: 1,
+					lifestyle: 'Professional',
+					description:
+						'Discover the calm and tranquility of city living in style.',
+					price: 2500,
+					availability: false,
+				},
+				{
+					room_id: 4,
+					room_title: 'Private Room for Studious',
+					room_capacity: 1,
+					lifestyle: 'Students',
+					description:
+						'Discover the calm and tranquility of city living in style.',
+					price: 2500,
+					availability: false,
+				},
+			],
+		},
+	],
+
+	// REVIEWS
+	REVIEWS: [
+		{
+			name: 'Jane Pale',
+			review: 'The host was so hospitable and the amenities were top-notch.',
+		},
+		{
+			name: 'John Doe',
+			review:
+				'Amazing experience! The location was perfect, and the amenities were top-notch.',
+		},
+		{
+			name: 'Mary Smith',
+			review:
+				'I loved the cozy atmosphere. It felt like a home away from home.',
+		},
+		{
+			name: 'Alex Johnson',
+			review:
+				'The views were breathtaking, and the service exceeded all expectations.',
+		},
+		{
+			name: 'Emily Davis',
+			review:
+				'The cleanliness of the place was impeccable, and the staff was very friendly.',
+		},
+		{
+			name: 'Michael Brown',
+			review:
+				'A fantastic getaway! The host was extremely accommodating, and the surroundings were serene.',
 		},
 	],
 };
