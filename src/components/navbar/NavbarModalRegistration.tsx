@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Dialog,
   DialogContent,
@@ -9,8 +10,17 @@ import {
 import { Button } from "../ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Calendar } from "@/components/ui/calendar";
+import { CalendarIcon } from "@radix-ui/react-icons";
 
 export function NavbarModalRegistration({ isOpen, onClose, openModal }) {
+  const [date, setDate] = React.useState<Date | undefined>(undefined);
+  const [isCalendarOpen, setIsCalendarOpen] = React.useState(false);
+
+  const handleCalendarToggle = () => {
+    setIsCalendarOpen((prev) => !prev);
+  };
+
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-[425px] bg-white text-black rounded-[20px]">
@@ -62,17 +72,48 @@ export function NavbarModalRegistration({ isOpen, onClose, openModal }) {
             </Label>
             <Input id="password" type="password" className="border-gray-400" />
           </div>
-          <div className="mt-4">
+
+          <div className="mt-4 relative">
             <Label htmlFor="dob" className="font-semibold">
               Date of Birth
             </Label>
-            <Input id="dob" type="date" className="border-gray-400" />
+            <div className="flex items-center">
+              <Input
+                id="dob"
+                type="text"
+                value={date ? date.toLocaleDateString() : ""}
+                onFocus={handleCalendarToggle}
+                readOnly
+                className="border-gray-400 pr-10"
+              />
+              <button
+                type="button"
+                className="absolute right-3 top-1/2 transform -translate-y-1/2"
+                onClick={handleCalendarToggle}
+              >
+                <CalendarIcon className="h-5 w-5 mt-5" />
+              </button>
+            </div>
+            {isCalendarOpen && (
+              <div className="absolute z-10 mt-2 left-1/2 transform -translate-x-1/2">
+                <Calendar
+                  mode="single"
+                  selected={date}
+                  onSelect={(selectedDate) => {
+                    setDate(selectedDate);
+                    setIsCalendarOpen(false);
+                  }}
+                  className="rounded-md border shadow bg-white"
+                />
+              </div>
+            )}
           </div>
+
           <div className="mt-4">
-            <Label htmlFor="contact" className="font-semibold">
+            <Label htmlFor="number" className="font-semibold">
               Contact Number
             </Label>
-            <Input id="number" type="contact" className="border-gray-400" />
+            <Input id="number" type="tel" className="border-gray-400" />
           </div>
         </div>
 
