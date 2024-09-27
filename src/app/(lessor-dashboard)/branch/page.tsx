@@ -23,6 +23,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Minus, Plus } from "lucide-react"
 import CreateRoom from "@/modules/lessor-dashboard/create listing/CreateRoom";
+import CreateForm from "@/modules/lessor-dashboard/create listing/CreateForm";
 
 const Branch = () => {
     return (
@@ -54,7 +55,14 @@ const Branch = () => {
                                 <Plus className="w-3 h-auto" strokeWidth="3" />
                             </Button>
                         }
-                    />
+                        title="Create room"
+                        description="Add a room for branch 1. Click save when you're done."
+                        className="max-h-[650px]"
+                    >
+                        <div>
+                            <CreateForm />
+                        </div>
+                    </CreateRoom>
                 </div>
                 <div className="col-span-full md:col-span-4">
                     <Card className="relative h-max border-none shadow-md">
@@ -66,7 +74,7 @@ const Branch = () => {
                         <div className="">
                             <img
                                 src={"https://picsum.photos/400/250"}
-                                className="bg-cover bg-center rounded-lg"
+                                className="bg-cover bg-center rounded-lg w-full"
                             />
                         </div>
                         <CardFooter className="px-3 bg-secondary/20 border-white/20 backdrop-blur-md border overflow-hidden py-1.5 absolute before:rounded-xl rounded-xl bottom-1 w-[calc(100%_-_9px)] shadow-sm ml-1 z-10">

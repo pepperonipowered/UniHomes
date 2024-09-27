@@ -1,7 +1,5 @@
 import {
-    Users,
     Settings,
-    LayoutGrid,
     LucideIcon,
     Home,
     List,

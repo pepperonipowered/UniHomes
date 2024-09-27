@@ -1,4 +1,5 @@
-import type { Config } from 'tailwindcss';
+import { nextui } from "@nextui-org/theme";
+import type { Config } from "tailwindcss";
 
 const config: Config = {
     darkMode: ["class"],
@@ -7,7 +8,8 @@ const config: Config = {
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/modules/**/*.{js,ts,jsx,tsx,mdx}",
-		'./src/modules/**/*.{js,ts,jsx,tsx,mdx}',
+        "./src/modules/**/*.{js,ts,jsx,tsx,mdx}",
+        "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
         extend: {
@@ -82,18 +84,18 @@ const config: Config = {
                 "collapsible-down": "collapsible-down 0.2s ease-out",
                 "collapsible-up": "collapsible-up 0.2s ease-out",
             },
-			screens: {
-				xs: '340px',
-				sm: '640px',
-				md: '768px',
-				lg: '1024px',
-				xlg: '1025px',
-				xxl: '1060px',
-				xl: '1280px',
-				'2xl': '1536px',
-			},
+            screens: {
+                xs: "340px",
+                sm: "640px",
+                md: "768px",
+                lg: "1024px",
+                xlg: "1025px",
+                xxl: "1060px",
+                xl: "1280px",
+                "2xl": "1536px",
+            },
         },
     },
-    plugins: [require("tailwindcss-animate")],
+    plugins: [require("tailwindcss-animate"), nextui()],
 };
 export default config;

@@ -21,11 +21,16 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
- 
 
-const CreateRoom = ({ trigger } : {trigger : React.ReactNode}) => {
+interface ReusableModalProps {
+    children : React.ReactNode; 
+    trigger: React.ReactNode;
+    title: string;
+    description?: string;
+    className?: string
+}
+
+const CreateRoom = ({ children, trigger, title, description, className }: ReusableModalProps ) => {
     const [open, setOpen] = React.useState(false)
     const isDesktop = useMediaQuery("(min-width: 768px)");
     if (isDesktop) {
@@ -34,62 +39,37 @@ const CreateRoom = ({ trigger } : {trigger : React.ReactNode}) => {
                 <DialogTrigger asChild>
                     { trigger }
                 </DialogTrigger>
-                <DialogContent className="sm:max-w-[425px] bg-secondary">
+                <DialogContent className={cn("sm:max-w-[1000px] bg-secondary", className)}>
                     <DialogHeader>
-                        <DialogTitle>Add room</DialogTitle>
+                        <DialogTitle>{ title }</DialogTitle>
                         <DialogDescription>
-                            Add a room for branch 1 here. Click save when
-                            you're done.
+                            { description }
                         </DialogDescription>
                     </DialogHeader>
-                    <ProfileForm />
+                    {/* content here */}
+                    { children }
                 </DialogContent>
             </Dialog>
         );
       }
       return (
           <Drawer open={open} onOpenChange={setOpen}>
-              <DrawerTrigger asChild>
-                  { trigger }
-              </DrawerTrigger>
+              <DrawerTrigger asChild>{trigger}</DrawerTrigger>
               <DrawerContent>
                   <DrawerHeader className="text-left">
-                      <DrawerTitle>Edit profile</DrawerTitle>
-                      <DrawerDescription>
-                          Make changes to your profile here. Click save when
-                          you're done.
-                      </DrawerDescription>
+                      <DrawerTitle>{title}</DrawerTitle>
+                      <DrawerDescription>{description}</DrawerDescription>
                   </DrawerHeader>
-                  <ProfileForm className="px-4" />
+                  {/* content here */}
+                  {children}
                   <DrawerFooter className="pt-2">
                       <DrawerClose asChild>
-                          <Button variant="outline">Cancel</Button>
+                          <Button variant="outline">Close</Button>
                       </DrawerClose>
                   </DrawerFooter>
               </DrawerContent>
           </Drawer>
       );
-}
-
-
-const ProfileForm = ({ className }: React.ComponentProps<"form">) => {
-  return (
-      <form className={cn("grid items-start gap-4", className)}>
-          <div className="grid gap-2">
-              <Label htmlFor="email">Email</Label>
-              <Input
-                  type="email"
-                  id="email"
-                  defaultValue="shadcn@example.com"
-              />
-          </div>
-          <div className="grid gap-2">
-              <Label htmlFor="username">Username</Label>
-              <Input id="username" defaultValue="@shadcn" />
-          </div>
-          <Button type="submit">Save changes</Button>
-      </form>
-  );
 }
 
 
