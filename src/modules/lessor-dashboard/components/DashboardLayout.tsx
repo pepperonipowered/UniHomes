@@ -1,7 +1,7 @@
 "use client"
 import { cn } from "@/lib/utils"
-import { useStore } from "@/components/ui/hooks/useStore"
-import { useSidebarToggle } from "@/components/ui/hooks/use-sidebar-toggle"
+import { useStore } from "@/hooks/useStore"
+import { useSidebarToggle } from "@/hooks/use-sidebar-toggle"
 import Sidebar from "./Sidebar"
 import { Footer } from "./Footer"
 

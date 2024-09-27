@@ -2,10 +2,10 @@ import Link from 'next/link'
 import { PanelsTopLeft } from 'lucide-react'
 
 import { cn } from '@/lib/utils'
-import { useStore } from '@/components/ui/hooks/useStore'
+import { useStore } from '@/hooks/useStore'
 import { Button } from '@/components/ui/button'
 import { Menu } from './Menu'
-import { useSidebarToggle } from '@/components/ui/hooks/use-sidebar-toggle'
+import { useSidebarToggle } from '@/hooks/use-sidebar-toggle'
 import SidebarToggle from './SidebarToggle'
 
 import React from 'react'
