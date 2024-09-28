@@ -106,7 +106,9 @@ const spiels = {
 	BUTTON_SHOW_LISTINGS: 'Show Listings',
 	BUTTON_BACK_HOME: 'Back to Home',
 	BUTTON_SEARCH: 'Search',
-
+	BUTTON_VISIT_PROPERTY: 'Visit Property Page',
+	BUTTON_MESSAGE: 'Message',
+	BUTTON_RESERVE: 'Reserve',
 	// INPUT FIELDS
 	FORM_ADDRESS: 'Address',
 	FORM_NAME: 'Name',
@@ -184,6 +186,9 @@ const spiels = {
 	MODAL_APPROVE_HEADER: 'Are you sure you want to approve this lessor?',
 	MODAL_REJECT: 'Confirm Rejection',
 	MODAL_REJECTION_HEADER: 're you sure you want to reject this lessor?',
+
+	LOREM:
+		'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem temporibus, sunt, cum provident inventore possimus in vitae voluptate voluptatibus aliquid, laboriosam perferendis velit veritatis a iusto. Perspiciatis eius repellendus suscipit id vel veritatis quod quae nisi dolore odit dignissimos accusantium laudantium a consequatur nostrum,tenetur atque excepturi quos obcaecati delectus?',
 };
 
 export default spiels;
