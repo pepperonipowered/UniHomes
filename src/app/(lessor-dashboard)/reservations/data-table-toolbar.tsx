@@ -197,7 +197,7 @@ export function DataTableToolbar<TData>({
                             selected={date}
                             onSelect={(date) => {
                                 setDate(date);
-                                const { from, to } = date;
+                                const { from, to } = date ?? { from: undefined, to: undefined };
                                 if (from && to) {
                                     table
                                         .getColumn("appointment_date")
