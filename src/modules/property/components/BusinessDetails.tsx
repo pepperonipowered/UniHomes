@@ -75,7 +75,7 @@ export function BusinessDetails() {
 
 				{/* BRANCHES SECTION */}
 				<TabsContent value='branchesAndRooms'>
-					<Card className='dark:bg-transparent dark:border-none'>
+					<Card className='dark:bg-transparent dark:border-none' >
 						<CardHeader className='dark:border-t-2 dark:border-sky-900'>
 							<CardTitle>Branches</CardTitle>
 							<CardDescription>Explore our different branches</CardDescription>
@@ -95,6 +95,7 @@ export function BusinessDetails() {
 														? 'bg-sky-800 text-white'
 														: 'bg-none'
 												}`}
+												
 											>
 												<CardContent className='flex h-16 items-center justify-center p-0'>
 													{branch.branch}
@@ -107,7 +108,8 @@ export function BusinessDetails() {
 
 							{/* Display available rooms for selected branch */}
 							{selectedBranch ? (
-								<div className='space-y-1 pt-1 pl-2'>
+								<div className='space-y-1 pt-1 pl-2'
+								onClick={() => {window.location.href = "/property/room";}}>
 									<SpecificBranchListings
 										listings={selectedBranch.available_rooms}
 									/>

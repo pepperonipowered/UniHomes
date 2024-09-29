@@ -9,7 +9,12 @@ import {
 
 function ListingCard() {
   return (
-      <Card className="w-full max-w-max bg-transparent border-none">
+      <Card
+        className="w-full max-w-max bg-transparent border-none"
+        onClick={() => {
+          window.location.href = "/property/room";
+        }}
+      >
           <CardHeader className="flex flex-row gap-3 md:gap-0 md:flex-col  p-0 m-0">
               <div>
                   <img

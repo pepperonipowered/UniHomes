@@ -123,26 +123,26 @@ const spiels = {
 	NAVBAR_OVERALL_LIST: [
 		{
 			label: 'Home',
-			href: '#home',
+			href: '/',
 		},
 		{
 			label: 'Listings',
-			href: '#listings',
+			href: '/client/listings',
 		},
 		// For logged in users
 		{
 			label: 'Messages',
-			href: '#messages',
+			href: '/client/inbox',
 		},
 		{
 			label: 'Favorites',
-			href: '#favorites',
+			href: '/client/favorites',
 		},
 	],
 	NAVBAR_MENU_LIST_WITH_DROPDOWN: [
 		{
 			label: 'Home',
-			href: '#home',
+			href: '/',
 			description: 'Description for Home',
 		},
 	],
@@ -150,16 +150,16 @@ const spiels = {
 	NAVBAR_MENU_LIST_WITHOUT_DROPDOWN: [
 		{
 			label: 'Listings',
-			href: '#listings',
+			href: '/client/listings',
 		},
 		// For logged in users
 		{
 			label: 'Messages',
-			href: '#messages',
+			href: '/client/inbox',
 		},
 		{
 			label: 'Favorites',
-			href: '#favorites',
+			href: '/client/favorites',
 		},
 	],
 
@@ -185,7 +185,7 @@ const spiels = {
 	MODAL_APPROVE: 'Confirm Approval',
 	MODAL_APPROVE_HEADER: 'Are you sure you want to approve this lessor?',
 	MODAL_REJECT: 'Confirm Rejection',
-	MODAL_REJECTION_HEADER: 're you sure you want to reject this lessor?',
+	MODAL_REJECTION_HEADER: 'Are you sure you want to reject this lessor?',
 
 	LOREM:
 		'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem temporibus, sunt, cum provident inventore possimus in vitae voluptate voluptatibus aliquid, laboriosam perferendis velit veritatis a iusto. Perspiciatis eius repellendus suscipit id vel veritatis quod quae nisi dolore odit dignissimos accusantium laudantium a consequatur nostrum,tenetur atque excepturi quos obcaecati delectus?',
