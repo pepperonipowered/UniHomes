@@ -57,9 +57,9 @@ export function getMenuList(pathname: string): Group[] {
                     ],
                 },
                 {
-                    href: "/",
-                    label: "All listings",
-                    active: pathname.includes("/all-listings"),
+                    href: "/reservations",
+                    label: "Reservations",
+                    active: pathname.includes("/reservations"),
                     icon: List,
                     submenus: [],
                 },
