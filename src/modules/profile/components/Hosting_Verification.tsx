@@ -19,7 +19,7 @@ const Hosting_Verification: React.FC = () => {
   };
 
   return (
-    <section className="w-full p-4">
+    <section className="w-full p-4 ">
       <div className="flex flex-col gap-4">
         <h1 className="font-bold text-3xl">Hosting Verification</h1>
         <p>

@@ -4,7 +4,7 @@ const poppinsBold = Poppins({ weight: "800", subsets: ["latin"] });
 const poppinsNormal = Poppins({ weight: "300", subsets: ["latin"] });
 const Terms = () => {
   return (
-    <section className="lg:w-3/5 lg:mt-2 mt-10 mx-6">
+    <section className="lg:w-3/5 lg:mt-2 mt-10 mx-6 h-full">
       <div className="p-1 leading-loose tracking-wider">
         <div className={poppinsBold.className}>
           <h1 className="text-2xl">Terms and Conditions</h1>
