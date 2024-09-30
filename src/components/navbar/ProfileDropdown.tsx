@@ -23,13 +23,9 @@ export function ProfileDropdown({ onLogout }) {
 				<DropdownMenuLabel>My Account</DropdownMenuLabel>
 				<DropdownMenuSeparator />
 				<DropdownMenuGroup>
-					<DropdownMenuItem>
+					<DropdownMenuItem onClick={() => {window.location.href = "/client/profile"}}>
 						<User className='mr-2 h-4 w-4' />
 						<span>Profile</span>
-					</DropdownMenuItem>
-					<DropdownMenuItem>
-						<CreditCard className='mr-2 h-4 w-4' />
-						<span>Hosting Verification</span>
 					</DropdownMenuItem>
 				</DropdownMenuGroup>
 				<DropdownMenuSeparator />
