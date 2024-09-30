@@ -1,6 +1,6 @@
 import NavBar from '@/components/navbar/Navbar';
 import FavoritesScreen from '@/modules/favorites/screens/FavoritesScreen';
-import { Footer } from '@/modules/lessor-dashboard/components/Footer';
+import Footer  from "@/modules/home/components/Footer";
 
 export default async function favorites() {
 	return (

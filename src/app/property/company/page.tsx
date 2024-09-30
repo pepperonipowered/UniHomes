@@ -1,5 +1,5 @@
 import NavBar from '@/components/navbar/Navbar';
-import { Footer } from '@/modules/lessor-dashboard/components/Footer';
+import Footer  from "@/modules/home/components/Footer";
 import LessorBusinessProfileScreen from '@/modules/property/screens/LessorBusinessProfileScreen';
 
 export default async function inbox() {

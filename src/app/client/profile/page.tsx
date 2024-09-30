@@ -1,5 +1,5 @@
 import NavBar from "@/components/navbar/Navbar";
-import { Footer } from "@/modules/lessor-dashboard/components/Footer";
+import Footer  from "@/modules/home/components/Footer";
 import Profile_Hosting from "@/modules/profile/screens/Profile_Hosting";
 
 export default async function profile() {
