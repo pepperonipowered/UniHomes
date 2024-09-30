@@ -111,6 +111,7 @@ const spiels = {
   BUTTON_RESERVE: "Reserve",
   BUTTON_UPDATE_PROFILE: "Update Profile",
   BUTTON_DELETE_ACCOUNT: "Delete Account",
+  BUTTON_SEND_REQUEST: "Send Request",
   // INPUT FIELDS
   FORM_ADDRESS: "Address",
   FORM_NAME: "Name",

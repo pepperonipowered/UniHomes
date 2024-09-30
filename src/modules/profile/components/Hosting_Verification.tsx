@@ -10,7 +10,8 @@ import { Label } from "@/components/ui/label";
 import { FileUpload } from "@/components/ui/file-upload";
 import React, { useState } from "react";
 import { Input } from "@/components/ui/input";
-
+import { Button } from "@/components/ui/button";
+import spiels from "@/lib/constants/spiels";
 const Hosting_Verification: React.FC = () => {
   const [files, setFiles] = useState<File[]>([]);
 
@@ -76,6 +77,11 @@ const Hosting_Verification: React.FC = () => {
                 type="text"
                 className="border-2 border-gray-300 focus:border-gray-500 transition-all duration-200 mt-2 mb-10"
               />
+            </div>
+            <div>
+              <Button className="w-full md:w-auto  bg-black text-white hover:bg-gray-800">
+                {spiels.BUTTON_SEND_REQUEST}
+              </Button>
             </div>
           </div>
         </div>

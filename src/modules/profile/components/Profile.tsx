@@ -97,16 +97,12 @@ const Profile = () => {
             type="email"
             className="border-2 border-gray-300 focus:border-gray-500 transition-all duration-200"
           />
-          <Label>Lifestyle Tag/s</Label>
-          <div>
-            <Badge variant="destructive">Destructive</Badge>
-          </div>
 
-          <div className="flex gap-2 mb-10">
-            <Button className="w-full sm:w-auto bg-black text-white hover:bg-gray-800">
+          <div className="flex gap-2 mb-10 mt-10">
+            <Button className="w-full md:w-auto  bg-black text-white hover:bg-gray-800">
               {spiels.BUTTON_UPDATE_PROFILE}
             </Button>
-            <Button className="w-full sm:w-auto bg-red-500 text-white hover:bg-red-600">
+            <Button className="w-full md:w-auto  bg-red-500 text-white hover:bg-red-600">
               {spiels.BUTTON_DELETE_ACCOUNT}
             </Button>
           </div>

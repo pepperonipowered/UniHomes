@@ -11,8 +11,8 @@ const Sidebars = ({ activeItem, onItemClick }) => {
 
   return (
     <section className="w-full p-4">
-      <div className="flex justify-center items-center py-4 sm:hidden">
-        <div className="relative flex rounded-full bg-black p-1 w-full max-w-lg">
+      <div className="flex justify-center items-center py-4 md:hidden ">
+        <div className="relative flex rounded-full bg-black p-1  w-full max-w-lg ">
           <button
             onClick={() => onItemClick("account")}
             className={`${
@@ -34,7 +34,7 @@ const Sidebars = ({ activeItem, onItemClick }) => {
         </div>
       </div>
 
-      <nav className="hidden sm:flex flex-col justify-center gap-2">
+      <nav className="md:flex flex-col justify-center gap-2 hidden ">
         <div
           onClick={() => onItemClick("account")}
           className={`flex items-center gap-2 p-2 rounded-md cursor-pointer text-sm md:text-base lg:text-md ${
