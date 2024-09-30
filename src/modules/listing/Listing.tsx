@@ -19,7 +19,7 @@ import {
 
 function Listing() {
 	return (
-		<ResponsiveLayout className='h-screen'>
+		<ResponsiveLayout className='h-screen mb-32 '>
 			<div className='grid grid-cols-2 gap-7'>
 				<div className='flex col-span-2 py-3 md:flex-row md:justify-between flex-col'>
 					<div className='flex'>

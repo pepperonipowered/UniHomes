@@ -1,6 +1,6 @@
 import NavBar from '@/components/navbar/Navbar';
 import HomeScreen from '@/modules/home/screens/HomeScreen';
-import { Footer } from '@/modules/lessor-dashboard/components/Footer';
+import Footer from '@/modules/home/components/Footer';
 
 export default async function Home() {
 	return (

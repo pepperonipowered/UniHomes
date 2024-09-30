@@ -1,5 +1,5 @@
 import NavBar from '@/components/navbar/Navbar';
-import { Footer } from '@/modules/lessor-dashboard/components/Footer';
+import Footer  from "@/modules/home/components/Footer";
 import { SpecificListing } from '@/modules/property/screens/SpecificListing';
 
 export default async function inbox() {
