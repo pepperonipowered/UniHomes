@@ -30,7 +30,7 @@ export function ProfileDropdown({ onLogout }) {
 				</DropdownMenuGroup>
 				<DropdownMenuSeparator />
 				<DropdownMenuGroup>
-					<DropdownMenuItem>
+					<DropdownMenuItem  onClick={() => {window.location.href = "/dashboard"}}>
 						<Users className='mr-2 h-4 w-4' />
 						<span>My Lessor Dashboard</span>
 					</DropdownMenuItem>
