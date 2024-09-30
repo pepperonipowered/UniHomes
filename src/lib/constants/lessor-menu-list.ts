@@ -5,12 +5,15 @@ import {
     LucideIcon,
     Home,
     List,
+    Plus,
+    Dot,
 } from "lucide-react";
 
 type Submenu = {
     href: string;
     label: string;
     active: boolean;
+    icon: LucideIcon;
 };
 
 type Menu = {
@@ -44,15 +47,22 @@ export function getMenuList(pathname: string): Group[] {
             groupLabel: "Contents",
             menus: [
                 {
-                    href: "/",
+                    href: "/branch",
                     label: "Branches",
                     active: pathname.includes("/branch"),
                     icon: Home,
                     submenus: [
                         {
-                            href: "/branch",
-                            label: "Brranch 1",
-                            active: pathname === "/branch",
+                            href: "/branch/1",
+                            label: "Brranch",
+                            active: pathname === "/branch/1",
+                            icon: Dot
+                        },
+                        {
+                            href: "/branch/add-branch",
+                            label: "Add Branch",
+                            active: pathname === "/branch/add-branch",
+                            icon: Plus
                         },
                     ],
                 },

@@ -1,4 +1,4 @@
-import React from 'react'
+import Recat from 'react'
 import DashboardLayout from '../../modules/lessor-dashboard/components/DashboardLayout'
 
 
