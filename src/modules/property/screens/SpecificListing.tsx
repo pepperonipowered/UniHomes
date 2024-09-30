@@ -28,16 +28,16 @@ export function SpecificListing() {
 	};
 
 	return (
-		<ResponsiveLayout className='my-24'>
+		<ResponsiveLayout>
 			<div>
-				<div className='grid grid-cols-5 gap-2'>
+				<div className='grid grid-cols-5 gap-2 mt-4'>
 					<MainPreview openModal={openModal} />
 					<RightPreviewsCarousel />
 				</div>
 
 				<div>
-					<div className='col-span-full grid grid-cols-3 my-6'>
-						<div className='h-full col-span-2'>
+					<div className='grid lg:grid-cols-3 grid-cols-1 gap-4 my-6'>
+						<div className='col-span-2'>
 							<div className='space-y-5'>
 								{/* Header */}
 								<div>
@@ -69,7 +69,7 @@ export function SpecificListing() {
 								<Banner />
 							</div>
 						</div>
-						<div className='h-full col-span-1 flex flex-row justify-end'>
+						<div className='flex lg:justify-end lg:items-start col-span-full lg:col-span-1'>
 							<div className=' w-max h-max sticky top-20'>
 								<BookingCard />
 							</div>

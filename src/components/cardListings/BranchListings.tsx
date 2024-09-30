@@ -32,7 +32,7 @@ BranchlistingsProps) {
 	}).format(price);
 	return (
 		<div>
-			<BentoGrid className='max-w-screen mx-auto'>
+			<BentoGrid className='max-w-screen mx-auto'  >
 				<BentoGridItem
 					title={
 						<div className='flex items-center justify-between'>
@@ -71,6 +71,9 @@ BranchlistingsProps) {
 									src={'https://picsum.photos/400/250'}
 									alt='Thumbnail'
 									className='w-full h-full object-cover'
+
+									//  IF POSSIBLE ADD THIS ON BENTO GRID COMPONENT
+									onClick={() => {window.location.href = "/property/room";}}
 								/>
 								{featured && (
 									<Badge

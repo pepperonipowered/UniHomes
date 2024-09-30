@@ -102,7 +102,7 @@ const Profile = () => {
             <Badge variant="destructive">Destructive</Badge>
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 mb-10">
             <Button className="w-full sm:w-auto bg-black text-white hover:bg-gray-800">
               {spiels.BUTTON_UPDATE_PROFILE}
             </Button>

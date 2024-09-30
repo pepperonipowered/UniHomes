@@ -27,6 +27,9 @@ function Banner() {
 						<Button
 							variant='outline'
 							className='border-white text-white hover:bg-white hover:text-black'
+							onClick={() => {
+								window.location.href = '/client/inbox';
+							}}
 						>
 							<span className='flex flex-row items-center gap-1'>
 								<MessageSquare className='w-5 h-5' /> {spiels.BUTTON_MESSAGE}
@@ -35,7 +38,10 @@ function Banner() {
 
 						<Button
 							variant='secondary'
-							className='bg-white text-black border border-white hover:bg-secondary hover:border-secondary rounded-lg px-4 py-2 transition duration-200 ease-in-out'
+							className='bg-white text-black border border-white hover:bg-secondary dark:hover:bg-popover-foreground rounded-lg px-4 py-2 transition duration-200 ease-in-out'
+							onClick={() => {
+								window.location.href = '/property/company';
+							}}
 						>
 							{spiels.BUTTON_VISIT_PROPERTY}
 						</Button>
