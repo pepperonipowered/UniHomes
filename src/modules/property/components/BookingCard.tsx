@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import {
 	Card,
 	CardContent,
-	CardDescription,
 	CardFooter,
 	CardHeader,
 	CardTitle,
@@ -31,7 +30,7 @@ export function BookingCard() {
 		setIsCalendarOpen((prev) => !prev);
 	};
 	return (
-		<Card className='w-[350px] bg-white shadow-lg lg:mt-0 md:mt-4 sm:mt-4 xs:mt-4'>
+		<Card className='w-[350px] bg-white dark:bg-secondary shadow-lg lg:mt-0 md:mt-4 sm:mt-4 xs:mt-4'>
 			<CardHeader>
 				<CardTitle>
 					<span className='font-bold mr-1'>P2,500</span>
@@ -111,7 +110,7 @@ export function BookingCard() {
 							</TableRow>
 						</TableBody>
 						<TableFooter>
-							<TableRow className='bg-white'>
+							<TableRow className='bg-white dark:bg-accent'>
 								<TableCell className='font-semibold'>Inital Total</TableCell>
 								<TableCell className='text-right'>₱2,516.00</TableCell>
 							</TableRow>

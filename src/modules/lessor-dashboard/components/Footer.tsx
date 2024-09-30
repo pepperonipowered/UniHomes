@@ -1,21 +1,11 @@
-import Link from 'next/link';
+import spiels from '@/lib/constants/spiels';
+import { Separator } from '@radix-ui/react-dropdown-menu';
 
 export function Footer() {
 	return (
-		<div className='z-20 w-full bg-background/95 shadow backdrop-blur supports-[backdrop-filter]:bg-background/60'>
-			<div className='mx-4 md:mx-8 flex h-14 items-center'>
-				<p className='text-xs md:text-sm leading-loose text-muted-foreground text-left'>
-					2024{' '}
-					<Link
-						href='/'
-						rel='noopener noreferrer'
-						className='font-medium underline underline-offset-4'
-					>
-						UniHomes
-					</Link>{' '}
-					all rights reserved.
-				</p>
-			</div>
-		</div>
+		<footer className='flex flex-col items-center pb-10 dark:bg-secondary'>
+			<Separator className='w-full h-px bg-blue-500 opacity-30 my-8' />
+			<p className='text-sm text-muted-foreground'>{spiels.FOOTER}</p>
+		</footer>
 	);
 }

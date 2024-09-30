@@ -3,7 +3,6 @@ import HowItWorks from '../components/HowItWorks';
 import Stats from '../components/Stats';
 import Testimonials from '../components/Testimonials';
 import CTA from '../components/CTA';
-import Footer from '../components/Footer';
 import { TracingBeam } from '@/components/ui/tracing-beam';
 
 const HomeScreen = () => {
@@ -31,7 +30,6 @@ const HomeScreen = () => {
 						<CTA />
 					</section>
 				</TracingBeam>
-				<Footer />
 				{/* </section> */}
 			</section>
 		</>

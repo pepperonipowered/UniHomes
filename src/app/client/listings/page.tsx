@@ -8,7 +8,7 @@ export default async function searchListing() {
 			<div className='sticky top-0 z-50'>
 				<NavBar />
 			</div>
-			<div className='mt-16 sm:mt-16 md:mt-12 lg:mt-0 '>
+			<div className='mt-16 sm:mt-16 md:mt-12 lg:mt-0 dark:bg-secondary'>
 				<Listing />
 			</div>
 			<Footer />

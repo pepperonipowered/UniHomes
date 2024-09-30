@@ -28,9 +28,9 @@ export function SpecificListing() {
 	};
 
 	return (
-		<ResponsiveLayout className='my-24'>
+		<ResponsiveLayout>
 			<div>
-				<div className='grid grid-cols-5 gap-2'>
+				<div className='grid grid-cols-5 gap-2 mt-4'>
 					<MainPreview openModal={openModal} />
 					<RightPreviewsCarousel />
 				</div>
