@@ -5,12 +5,13 @@ import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { BusinessDetails } from '../../property/components/BusinessDetails';
 import tempValues from '@/lib/constants/tempValues';
+import ResponsiveLayout from '@/components/ResponsiveLayout';
 
 const LessorBusinessProfileScreen = () => {
 	const { title, lessor_name } = tempValues.LISTINGS[0];
 
 	return (
-		<>
+		<ResponsiveLayout className='h-screen'>
 			<div className='xl:w-full xl:flex xl:justify-center'>
 				<div className='xl:w-[1250px]'>
 					<div className='dark:text-white h-[100px] md:h-[70px] lg:h-[1px]' />
@@ -108,7 +109,7 @@ const LessorBusinessProfileScreen = () => {
 
 			{/* Business Details Section */}
 			<BusinessDetails />
-		</>
+		</ResponsiveLayout>
 	);
 };
 

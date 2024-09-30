@@ -76,7 +76,7 @@ export function BookingCard() {
 									className='absolute right-3 top-1/2 transform -translate-y-1/2'
 									onClick={handleCalendarToggle}
 								>
-									<CalendarIcon className='h-4 w-4 mt-4' />
+									<CalendarIcon className='h-4 w-4 mt-6' />
 								</button>
 							</div>
 							{isCalendarOpen && (
