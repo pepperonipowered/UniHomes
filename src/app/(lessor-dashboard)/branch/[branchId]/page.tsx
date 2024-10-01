@@ -54,7 +54,7 @@ const BranchDetails = ({ params }: { params: { branchId: string } }) => {
                           Address lorem ipsum dolor sit amet.
                       </p>
                       <Link
-                          href={"/branch"}
+                          href={"/property/room"}
                           className={cn(
                               buttonVariants({
                                   variant: "default",
