@@ -73,7 +73,6 @@ const householdAmenities = [
 
 const AddBranchForm = () => {
     // fetch all nearby places and put in state para magamit with backend
-    const [selectedFrameworks, setSelectedFrameworks] = React.useState<string[]>([]);
 
     const createBranchForm = useForm<CreateBranchSchema>({
         resolver: zodResolver(createBranchSchema),
