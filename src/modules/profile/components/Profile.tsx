@@ -1,115 +1,174 @@
-"use client";
-
-import { useState } from "react";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import spiels from "@/lib/constants/spiels";
-import { Badge } from "@/components/ui/badge";
-import { CalendarIcon } from "lucide-react";
+import { PencilIcon } from "@heroicons/react/24/solid";
+import { PencilSquareIcon } from "@heroicons/react/24/solid";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import { Calendar } from "@/components/ui/calendar";
-import { format } from "date-fns"; // For formatting date
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+  Input,
+  DatePicker,
+} from "@nextui-org/react";
+import React, { useRef } from "react";
 
-const Profile = () => {
-  const [date, setDate] = useState(null); // State for selected date
+const ProfileSection = () => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const fileInputRef = useRef(null); // Create a reference to the file input
+
+  // Function to trigger file input when pencil is clicked
+  const handlePencilClick = () => {
+    fileInputRef.current.click(); // Programmatically trigger the file input click
+  };
+
+  // Function to handle file selection
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      console.log("Selected file:", file); // You can handle the selected file here (e.g., show preview)
+    }
+  };
 
   return (
     <section className="w-full p-2">
-      <form className="px-2">
-        <div className="flex flex-col gap-4 ">
-          <div className="flex gap-2">
-            <div className="flex-1">
-              <Label>First name</Label>
-              <Input
-                id="first-name"
-                placeholder="Tyler"
-                type="text"
-                className="border-2 border-gray-300 focus:border-gray-500 transition-all duration-200"
-              />
-            </div>
-            <div className="flex-1">
-              <Label>Last name</Label>
-              <Input
-                id="last-name"
-                placeholder="Aasdasd"
-                type="text"
-                className="border-2 border-gray-300 focus:border-gray-500 transition-all duration-200"
-              />
-            </div>
-          </div>
-          <p className="opacity-60">
-            This is your public display name. It can be your real name or a
-            pseudonym. You can only change this once every 30 days.
-          </p>
-          <Label>Contact Number</Label>
-          <Input
-            id="contact-number"
-            placeholder="1234567890"
-            type="text"
-            className="border-2 border-gray-300 focus:border-gray-500 transition-all duration-200"
+      <div className="flex p-2 gap-4 h-[20%]">
+        <div className="relative">
+          <Avatar className="w-32 h-32 ">
+            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+          {/* Button to trigger file input */}
+          <button
+            onClick={handlePencilClick}
+            className="absolute bottom-0 right-0 bg-white p-1 rounded-full shadow-md hover:bg-gray-200 transition bg-white w-7"
+          >
+            <PencilSquareIcon className="w-5 h-5 text-gray-600" />
+          </button>
+          {/* Hidden file input */}
+          <input
+            type="file"
+            ref={fileInputRef} // Reference the file input
+            className="hidden"
+            accept="image/*" // Only allow image files
+            onChange={handleFileChange} // Handle file selection
           />
-          <Label>Address</Label>
-          <Input
-            id="address"
-            placeholder="123 Main St."
-            type="text"
-            className="border-2 border-gray-300 focus:border-gray-500 transition-all duration-200"
-          />
-
-          {/* Date of Birth Section with Calendar */}
-          <Label>Date of Birth</Label>
-          <Popover>
-            <PopoverTrigger asChild>
-              <Button
-                variant="outline"
-                className="border-2 border-gray-300 focus:border-gray-500 transition-all duration-200 w-full sm:w-auto pl-3 text-left font-normal"
-              >
-                {date ? format(date, "MMMM d, yyyy") : <span>Pick a date</span>}
-                <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
-              </Button>
-            </PopoverTrigger>
-            <PopoverContent className="w-auto p-0" align="start">
-              <Calendar
-                mode="single"
-                selected={date}
-                onSelect={setDate}
-                className="rounded-md"
-                disabled={(date) =>
-                  date > new Date() || date < new Date("1900-01-01")
-                }
-                initialFocus
-                captionLayout="dropdown-buttons"
-                fromYear={1900}
-                toYear={new Date().getFullYear()}
-              />
-            </PopoverContent>
-          </Popover>
-
-          <Label>Email</Label>
-          <Input
-            id="email"
-            placeholder="example@example.com"
-            type="email"
-            className="border-2 border-gray-300 focus:border-gray-500 transition-all duration-200"
-          />
-
-          <div className="flex gap-2 mb-10 mt-10">
-            <Button className="w-full md:w-auto  bg-black text-white hover:bg-gray-800">
-              {spiels.BUTTON_UPDATE_PROFILE}
-            </Button>
-            <Button className="w-full md:w-auto  bg-red-500 text-white hover:bg-red-600">
-              {spiels.BUTTON_DELETE_ACCOUNT}
-            </Button>
+        </div>
+        <div className="flex items-center">
+          <div className="flex flex-col">
+            <h1 className="font-bold mb-1">Lucky Calalo</h1>
+            <p>Baguio City, De Baguio</p>
           </div>
         </div>
-      </form>
+      </div>
+      <div className="flex flex-col gap-5 p-4 mt-10">
+        <div className="flex justify-between items-center">
+          <h1 className="text-xl font-bold">Personal Details</h1>
+          <Button
+            value="center"
+            onPress={onOpen}
+            className="flex items-center text-blue-600 underline hover:text-blue-800 bg-transparent"
+          >
+            <PencilIcon className="w-4 h-4 mr-1 " />
+            Edit
+          </Button>
+        </div>
+
+        <div>
+          <p className="text-base font-medium text-default-400">Full Name</p>
+          <h4 className="text-lg font-medium">Lucky Calalo</h4>
+        </div>
+        <div>
+          <p className="text-base font-medium text-default-400">
+            Contact Number
+          </p>
+          <h4 className="text-lg font-medium">091231221312</h4>
+        </div>
+        <div>
+          <p className="text-base font-medium text-default-400">Address</p>
+          <h4 className="text-lg font-medium">Baguio City, De Baguio</h4>
+        </div>
+        <div>
+          <p className="text-base font-medium text-default-400">
+            Date of Birth
+          </p>
+          <h4 className="text-lg font-medium">1/1/1999</h4>
+        </div>
+        <div>
+          <p className="text-base font-medium text-default-400">Email</p>
+          <h4 className="text-lg font-medium">asdas@adasd.com</h4>
+        </div>
+      </div>
+      <Modal isOpen={isOpen} placement="center" onOpenChange={onOpenChange}>
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">
+                Edit Profile
+              </ModalHeader>
+              <ModalBody>
+                <div className="flex flex-col gap-2">
+                  <div>
+                    <Input
+                      key="inside"
+                      type="text"
+                      label="Full Name"
+                      labelPlacement="outside"
+                      placeholder="Lucky Calalo"
+                    />
+                  </div>
+                  <div>
+                    <Input
+                      key="inside"
+                      type="number"
+                      label="Contact Number"
+                      labelPlacement="outside"
+                      placeholder="091231221312"
+                    />
+                  </div>
+                  <div>
+                    <Input
+                      key="inside"
+                      type="text"
+                      label="Address"
+                      labelPlacement="outside"
+                      placeholder="Baguio City, De Baguio"
+                    />
+                  </div>
+                  <div>
+                    <DatePicker
+                      label="Birth Date"
+                      labelPlacement="outside"
+                      variant="flat"
+                      showMonthAndYearPickers
+                    />
+                  </div>
+                  <div>
+                    <Input
+                      key="inside"
+                      type="email"
+                      label="Full Name"
+                      labelPlacement="outside"
+                      placeholder="asdas@adasd.com"
+                    />
+                  </div>
+                </div>
+              </ModalBody>
+              <ModalFooter>
+                <Button color="danger" variant="light" onPress={onClose}>
+                  Close
+                </Button>
+                <Button color="primary" onPress={onClose}>
+                  Save
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
     </section>
   );
 };
 
-export default Profile;
+export default ProfileSection;
