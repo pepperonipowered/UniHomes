@@ -16,18 +16,16 @@ import React, { useRef } from "react";
 
 const ProfileSection = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-  const fileInputRef = useRef(null); // Create a reference to the file input
+  const fileInputRef = useRef(null);
 
-  // Function to trigger file input when pencil is clicked
   const handlePencilClick = () => {
-    fileInputRef.current.click(); // Programmatically trigger the file input click
+    fileInputRef.current.click();
   };
 
-  // Function to handle file selection
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     if (file) {
-      console.log("Selected file:", file); // You can handle the selected file here (e.g., show preview)
+      console.log("Selected file:", file);
     }
   };
 
@@ -39,20 +37,18 @@ const ProfileSection = () => {
             <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
-          {/* Button to trigger file input */}
           <button
             onClick={handlePencilClick}
             className="absolute bottom-0 right-0 bg-white p-1 rounded-full shadow-md hover:bg-gray-200 transition bg-white w-7"
           >
             <PencilSquareIcon className="w-5 h-5 text-gray-600" />
           </button>
-          {/* Hidden file input */}
           <input
             type="file"
-            ref={fileInputRef} // Reference the file input
+            ref={fileInputRef}
             className="hidden"
-            accept="image/*" // Only allow image files
-            onChange={handleFileChange} // Handle file selection
+            accept="image/*"
+            onChange={handleFileChange}
           />
         </div>
         <div className="flex items-center">
