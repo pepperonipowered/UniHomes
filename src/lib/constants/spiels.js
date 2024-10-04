@@ -10,7 +10,7 @@ const spiels = {
   CTA_LABEL: "Call to Action",
   CTA_DESCRIPTION:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
-  FOOTER: "© 2024 UniHomes. All rights reserved.",
+  FOOTER: "© 2024 UniHomes",
   HERO_BADGE: "New Release",
   HERO_DESCRIPTION:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
