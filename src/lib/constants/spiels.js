@@ -32,6 +32,57 @@ const spiels = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
     },
   ],
+  BENEFIT_OF_BOOSTING: "Benefits of Boosting Your Listing",
+  BENEFIT_OF_BOOSTING_CARDS: [
+    {
+      label: "Increased visibility on search results",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    },
+    {
+      label: "Featured placement on the homepage",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    },
+    {
+      label: "Highlighted status for potential guests",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    },
+  ],
+  WHY_CHOOSE: "Why Choose Our Reservation Fee Structure?",
+  WHY_CHOOSE_CARDS: [
+    {
+      label: "Affordable",
+      description: "Only pay when you earn!",
+    },
+    {
+      label: "Transparent",
+      description: "No hidden fees or surprise charges.",
+    },
+    {
+      label: "Simple",
+      description:
+        "Easy to calculate, so you can focus on managing your property",
+    },
+  ],
+  HOW_IT_WORKS: "Why Choose Our Reservation Fee Structure?",
+  HOW_IT_WORKS_CARDS: [
+    {
+      label: "List Your Property",
+      description: "Sign up and create a property listing for free !",
+    },
+    {
+      label: "Boost for Visibility",
+      description:
+        "Choose to boost your listing for just ₱100 to reach more potential guests.",
+    },
+    {
+      label: "Receive Bookings",
+      description:
+        "When guests book through our platform, only a 3% fee applies.",
+    },
+  ],
   STATS_LABEL: "STATS",
   STATS_HEADER: "Here are some stats to look at",
   STATS_DATA: [

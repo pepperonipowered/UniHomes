@@ -1,21 +1,16 @@
-import {} from "@/components/ui/card";
 import spiels from "@/lib/constants/spiels";
 import { WobbleCard } from "@/components/ui/wobble-card";
-
-const HowItWorks = () => {
+const WhyChoose = () => {
   return (
-    <section>
-      <div className="container">
-        <div className="flex flex-col items-center text-center">
-          <h1 className="font-semibold xs:text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl dark:text-primary-foreground">
-            {spiels.HOW_IT_WORKS}
-          </h1>
-          <p className="max-w-xl text-muted-foreground lg:text-lg">
-            {spiels.HERO_DESCRIPTION}
-          </p>
+    <section className="mt-24">
+      <div className="flex flex-col mx-5 text-center ">
+        <div className="flex justify-center">
+          <div className="text-4xl font-extrabold mb-10">
+            <h1 className="">{spiels.WHY_CHOOSE}</h1>
+          </div>
         </div>
-        <div className="mt-5 grid grid-cols-1 place-items-center gap-4 lg:grid-cols-3 md:grid-cols-2">
-          {spiels.HOW_IT_WORKS_CARDS.map((item, index) => (
+        <div className="flex flex-col gap-2 ">
+          {spiels.WHY_CHOOSE_CARDS.map((item, index) => (
             <WobbleCard
               containerClassName={`col-span-1 ${
                 index === 2 ? "md:col-span-2" : ""
@@ -38,5 +33,4 @@ const HowItWorks = () => {
     </section>
   );
 };
-
-export default HowItWorks;
+export default WhyChoose;
