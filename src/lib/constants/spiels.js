@@ -163,6 +163,8 @@ const spiels = {
   BUTTON_UPDATE_PROFILE: "Update Profile",
   BUTTON_DELETE_ACCOUNT: "Delete Account",
   BUTTON_SEND_REQUEST: "Send Request",
+  BUTTON_START_NOW: "Start Now",
+
   // INPUT FIELDS
   FORM_ADDRESS: "Address",
   FORM_NAME: "Name",
@@ -192,6 +194,11 @@ const spiels = {
       label: "Favorites",
       href: "/client/favorites",
     },
+
+    {
+      label: "Pricing",
+      href: "/client/pricing",
+    },
   ],
   NAVBAR_MENU_LIST_WITH_DROPDOWN: [
     {
@@ -214,6 +221,10 @@ const spiels = {
     {
       label: "Favorites",
       href: "/client/favorites",
+    },
+    {
+      label: "Pricing",
+      href: "/client/pricing",
     },
   ],
 

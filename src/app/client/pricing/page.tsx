@@ -1,14 +1,15 @@
 import NavBar from "@/components/navbar/Navbar";
-import HomeScreen from "@/modules/home/screens/HomeScreen";
+import Pricing from "@/modules/subscriptions/screen/Pricing";
 import Footer from "@/modules/home/components/Footer";
-export default async function Home() {
+
+export default async function pricing() {
   return (
     <div className="h-screen overflow-auto">
       <div className="sticky top-0 z-50">
         <NavBar />
       </div>
       <div className="mt-16 sm:mt-16 md:mt-12 lg:mt-0 ">
-        <HomeScreen />
+        <Pricing />
       </div>
       <Footer />
     </div>

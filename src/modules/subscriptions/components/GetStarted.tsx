@@ -1,6 +1,8 @@
+import { Button } from "@/components/ui/button";
+import spiels from "@/lib/constants/spiels";
 const GetStarted = () => {
   return (
-    <section className="h-full mt-24">
+    <section className="h-full my-32">
       <div className="flex flex-col mx-5 text-center ">
         <div className="flex justify-center">
           <div className="text-4xl font-extrabold w-[80%]">
@@ -13,6 +15,11 @@ const GetStarted = () => {
             advantage of our simple and cost-effective pricing plans. Let’s make
             your condominium the top choice for travelers!
           </p>
+        </div>
+        <div className="flex justify-center">
+          <Button className="mt-6 md:mt-12 w-[80%] ">
+            {spiels.BUTTON_START_NOW}
+          </Button>
         </div>
       </div>
     </section>
