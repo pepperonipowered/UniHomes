@@ -1,4 +1,4 @@
-import { CreditCard, LogOut, User, Users } from 'lucide-react';
+import { LayoutDashboard, LogOut, User } from 'lucide-react';
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -9,6 +9,7 @@ import {
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { IconExchange } from '@tabler/icons-react';
 
 export function ProfileDropdown({ onLogout }) {
 	return (
@@ -23,15 +24,31 @@ export function ProfileDropdown({ onLogout }) {
 				<DropdownMenuLabel>My Account</DropdownMenuLabel>
 				<DropdownMenuSeparator />
 				<DropdownMenuGroup>
-					<DropdownMenuItem onClick={() => {window.location.href = "/client/profile"}}>
+					<DropdownMenuItem
+						onClick={() => {
+							window.location.href = '/client/profile';
+						}}
+					>
 						<User className='mr-2 h-4 w-4' />
 						<span>Profile</span>
+					</DropdownMenuItem>
+					<DropdownMenuItem
+						onClick={() => {
+							window.location.href = '/client/transaction_history';
+						}}
+					>
+						<IconExchange className='mr-2 h-4 w-4' />
+						<span>Transaction History</span>
 					</DropdownMenuItem>
 				</DropdownMenuGroup>
 				<DropdownMenuSeparator />
 				<DropdownMenuGroup>
-					<DropdownMenuItem  onClick={() => {window.location.href = "/dashboard"}}>
-						<Users className='mr-2 h-4 w-4' />
+					<DropdownMenuItem
+						onClick={() => {
+							window.location.href = '/dashboard';
+						}}
+					>
+						<LayoutDashboard className='mr-2 h-4 w-4' />
 						<span>My Lessor Dashboard</span>
 					</DropdownMenuItem>
 				</DropdownMenuGroup>
