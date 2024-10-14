@@ -11,7 +11,7 @@ const HowItWorks = () => {
 						{spiels.HOW_IT_WORKS}
 					</h1>
 					<p className='max-w-xl text-muted-foreground lg:text-lg'>
-						{spiels.HERO_DESCRIPTION}
+						{spiels.HOW_IT_WORKS_DESCRIPTION}
 					</p>
 				</div>
 				<div className='mt-5 grid grid-cols-1 place-items-center gap-4 lg:grid-cols-3 md:grid-cols-2'>

@@ -8,28 +8,32 @@ const spiels = {
 
 	// Home
 	CTA_LABEL: 'Call to Action',
-	CTA_DESCRIPTION:
-		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.',
+	CTA_DESCRIPTION: [
+		'Stay in the loop with UniHomes! Sign up with your email to receive the latest updates.',
+		'Don’t miss out — join our community today!',
+	],
 	FOOTER: '© 2024 UniHomes',
 	HERO_BADGE: 'New Release',
 	HERO_DESCRIPTION:
-		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.',
+		'Find your perfect rental with ease. Search verified dorms, condos, and apartments, explore listings, and connect with homeowners—all in one simple platform.',
 	HOW_IT_WORKS: 'How It Works',
+	HOW_IT_WORKS_DESCRIPTION:
+		'UniHomes makes finding rentals in Baguio simple. Browse listings, explore details, and connect with homeowners in just a few steps.',
 	HOW_IT_WORKS_CARDS: [
 		{
 			label: 'Search Property',
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+				'Discover a variety of rental options quickly. Use search filters to find properties that match your preferences, from budget to location.',
 		},
 		{
 			label: 'Explore Property',
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+				'Get in-depth property details, including photos, amenities, and nearby attractions. Use our map view to explore the area and check proximity to key locations.',
 		},
 		{
 			label: 'Choose Property',
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+				'Directly contact homeowners, discuss terms, and arrange property visits. Once you’ve found the right home, make your move with confidence.',
 		},
 	],
 	STATS_LABEL: 'STATS',
@@ -62,6 +66,8 @@ const spiels = {
 	],
 	TESTIMONIALS_LABEL: 'TESTIMONIALS',
 	TESTIMONIALS_HEADER: 'Meet our happy clients',
+	TESTIMONIALS_DESCRIPTION:
+		'Discover how UniHomes has simplified the rental search process. Our satisfied clients share their experiences of finding verified dorms, condos, and apartments through our user-friendly platform.',
 
 	//Favorites
 	TAB_ALL: 'All',

@@ -15,7 +15,7 @@ const Testimonials = () => {
 							{spiels.TESTIMONIALS_HEADER}
 						</h1>
 						<p className='mt-1 text-muted-foreground md:mt-3 text-left lg:text-right'>
-							{spiels.HERO_DESCRIPTION}
+							{spiels.TESTIMONIALS_DESCRIPTION}
 						</p>
 					</div>
 
