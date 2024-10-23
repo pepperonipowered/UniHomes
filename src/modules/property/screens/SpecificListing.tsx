@@ -187,10 +187,6 @@ export function SpecificListing({ id }: SpecificListingProps) {
     occupants: property.occupants,
   };
 
-  const onClickMap = (event) => {
-    console.log(event.detail.latLng);
-    console.log(position)
-  };
 
   return (
     <ResponsiveLayout>
@@ -287,7 +283,6 @@ export function SpecificListing({ id }: SpecificListingProps) {
                 defaultZoom={15}
                 defaultCenter={position}
                 mapId={process.env.NEXT_PUBLIC_MAP_ID}
-                onClick={onClickMap}
                 >
                 {position && (
                     <AdvancedMarker
