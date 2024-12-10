@@ -17,6 +17,7 @@ export function PropertyTab() {
     libraries: ["places"],
   });
  const [newPropertyCount, setNewPropertyCount] = useState(0);
+
   const handleCountUpdate = (count: number) => {
 		setNewPropertyCount(count);
 	};
