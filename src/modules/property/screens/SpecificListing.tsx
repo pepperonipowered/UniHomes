@@ -328,7 +328,7 @@ export function SpecificListing({ id }: SpecificListingProps) {
     const request = {
       location: new window.google.maps.LatLng(position.lat, position.lng),
       radius: 500,
-      type: ["store"],
+      type: "store"
     };
 
     service.nearbySearch(request, (results, status) => {
@@ -365,6 +365,12 @@ export function SpecificListing({ id }: SpecificListingProps) {
     currentPage * 5
   );
 
+  useEffect(() => {
+    if (!loading && !nearbyFacilities.length && property) {
+      handleNearbyFacilities();
+    }
+  }, [loading, nearbyFacilities.length, handleNearbyFacilities]);
+
   // GOOGLE REDIRECT SERVICE
   const handleAddUserLocation = () => {
     let currentpos = position;
@@ -389,11 +395,7 @@ export function SpecificListing({ id }: SpecificListingProps) {
     );
   };
 
-  useEffect(() => {
-    if (!loading && !nearbyFacilities.length && property) {
-      handleNearbyFacilities();
-    }
-  }, [loading, nearbyFacilities.length, handleNearbyFacilities]);
+
 
   const fetchDirections = () => {
     if (!userPosition) return;
