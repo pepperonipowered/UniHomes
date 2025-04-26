@@ -40,7 +40,7 @@
     "src/modules/home/components/Hero.js",
     "src/modules/favorites/screens/FavoritesScreen.TSX",
     "src/modules/subscriptions/screen/Pricing.js"
-  ],
+, "src/utils/supabase/seeder.ts"  ],
   "exclude": [
     "node_modules"
   ]

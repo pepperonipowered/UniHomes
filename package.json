@@ -2,12 +2,14 @@
   "name": "unihomes",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "email": "email dev"
+    "email": "email dev",
+    "seed": "node --loader ts-node/esm src/utils/supabase/seeder.ts"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
@@ -129,6 +131,7 @@
     "zustand": "^4.5.5"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.7.0",
     "@types/google.maps": "^3.58.1",
     "@types/node": "^20",
     "@types/react": "^18",
@@ -138,7 +141,9 @@
     "mini-css-extract-plugin": "^2.9.1",
     "postcss": "^8.4.47",
     "react-email": "3.0.2",
+    "supabase": "^2.22.6",
     "tailwindcss": "^3.4.13",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }
